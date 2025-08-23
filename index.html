@@ -8,7 +8,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
 body::before {
   content: "";
   position: fixed;
@@ -56,7 +59,7 @@ h2 {
 .text {
   font-weight: bold;
   font-style: italic;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(125, 229, 235);
   text-shadow: 
     -1px -1px 0 #000,  
@@ -69,7 +72,11 @@ h2 {
   border-radius: 0.5em;
 }
 #info {
-  font-size: 25px;
+  font-size: 1.32em;
+  color: black;
+  background-color: white;
+  height: 450px;
+  padding: 10px;
 }
 </style>
 </head>
@@ -107,12 +114,12 @@ h2 {
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Site header -->
-  <div class="w3-container w3-content w3-center w3-padding-64 style=max-width: 1500px">
-    <img src="/images/diggingforshovels-logo-noBGxcf.png" class="w3-round" alt="Rich Pin" style="width:100%">
+  <div class="w3-container w3-content w3-center w3-padding-48 style=max-width: 1500px">
+    <img src="/images/diggingforshovels-logo-noBGxcf.png" class="w3-round" alt="Digging for Shovels" style="width:100%">
   </div>
 
   <!-- The Links Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="links">
+  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1500px" id="links">
     <h2 class="w3-wide">LINKS</h2>
     <p class="subtext w3-large"><i>Follow us on social media!</i></p>
     <div class="text w3-row w3-padding-32">
@@ -129,30 +136,30 @@ h2 {
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1500px" id="band">
     <h2 class="w3-wide">MEET THE BAND!</h2>
     <p class="subtext w3-large"><i>"One good thing about music, when it hits you, you feel no pain" - Bob Marley</i></p>
-    <div class="text w3-row w3-padding-32">
+    <div class="text w3-row w3-padding-16">
       <div class="w3-half">
-        <img src="/images/FenwayPorchfest2025-006.jpg" class="w3-round w3-margin-bottom" alt="Rich Pin" style="width:100%">
+        <img src="/images/FenwayPorchfest2025-006.jpg" class="w3-round" alt="Rich Pin" style="width:100%">
         <p>Rich Pin</p>
       </div>
       <div class="w3-half">
-        <img src="/images/FenwayPorchfest2025-010.jpg" class="w3-round w3-margin-bottom" alt="Jamison Nicosia" style="width:100%">
+        <img src="/images/FenwayPorchfest2025-010.jpg" class="w3-round" alt="Jamison Nicosia" style="width:100%">
         <p>Jamison Nicosia</p>
       </div>
     </div>
   </div>
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:1500px" id="contact">
+  <div class="w3-container w3-content w3-padding-16" style="max-width:1500px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="subtext w3-large w3-center"><i>Available for booking!</i></p>
     <div class="w3-row">
-      <div class="text w3-col m6" id="info">
-        <i class="fa fa-map-marker" style="width:30px"></i> Boston, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: diggingforshovels@gmail.com<br>
+      <div class="w3-col m6" id="info">
+        <i class="fa fa-map-marker" style="width:20px"></i> Boston, US<br>
+        <i class="fa fa-phone" style="width:20px"></i> Phone: (978) 893-9339<br>
+        <i class="fa fa-envelope" style="width:20px"> </i> Email: diggingforshovels@gmail.com<br>
       </div>
       <div class="w3-col m6">
         <iframe 
@@ -174,12 +181,9 @@ h2 {
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <i class="fa fa-soundcloud w3-hover-opacity"></i>
+  <i class="fa fa-youtube w3-hover-opacity"></i>
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
