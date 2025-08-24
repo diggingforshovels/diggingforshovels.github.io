@@ -21,11 +21,16 @@ body::before {
   height: 100%;
   z-index: -1;
   opacity: 0.2;
-  background-image: url("/images/diggingforshovels-logo-highContrast-cropped.jpg");
+  background-image: url("/images/diggingforshovels-logo-desktop.png");
   background-position: center;
   background-size: cover;
   background-attachment:fixed;
   min-height: 100%;
+}
+@media screen and (max-width: 800px) {
+  body::before {
+    background-image: url("/images/diggingforshovels-logo-mobile.png");
+  }
 }
 h1 {
   font-weight: bold;
@@ -68,8 +73,12 @@ h2 {
      1px 1px 0 #000;
   letter-spacing: 5px;
 }
-.links {
+.link-container {
   border-radius: 0.5em;
+  background-color: rgb(22, 158, 236, 0.5);
+}
+.link {
+  opacity: 1;
 }
 #info {
   font-size: 1.32em;
@@ -119,24 +128,41 @@ h2 {
   </div>
 
   <!-- The Links Section -->
-  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1500px" id="links">
+  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:900px" id="links">
     <h2 class="w3-wide">LINKS</h2>
     <p class="subtext w3-large"><i>Follow us on social media!</i></p>
-    <div class="text w3-row w3-padding-32">
-      <div class="links w3-card w3-blue">
-        <p>Link 1</p>
+    <div class="w3-row w3-padding-32">
+      <div class="link-container w3-container w3-padding-16"> <!-- Instagram Link -->
+        <div class="link w3-left">
+          <img src="/images/Instagram-icon.png" alt="Instagram" style="width:70px;height:70px;">
+        </div>
+        <div class="link w3-center w3-xlarge w3-padding-16">
+          <a href="https://www.instagram.com/diggingforshovels/" target="_blank">Follow us on Instagram!</a>
+        </div>
       </div>
-      <div class="links w3-card w3-blue">
-        <p>Link 2</p>
+      <div class="w3-row w3-padding-16"></div> <!-- Spacer -->
+      <div class="link-container w3-card w3-container w3-padding-16"> <!-- YouTube Link -->
+        <div class="link w3-left">
+          <img src="/images/YouTube-icon.png" alt="YouTube" style="width:70px;height:70px;">
+        </div>
+        <div class="link w3-center w3-xlarge w3-padding-16">
+          <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">Follow us on YouTube!</a>
+        </div>
       </div>
-      <div class="links w3-card w3-blue">
-        <p>Link 3</p>
+      <div class="w3-row w3-padding-16"></div> <!-- Spacer -->
+      <div class="link-container w3-card w3-container w3-padding-16"> <!-- Venmo Link -->
+        <div class="link w3-left">
+          <img src="/images/Venmo-icon.png" alt="Venmo" style="width:70px;height:70px;">
+        </div>
+        <div class="link w3-center w3-xlarge w3-padding-16">
+          <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">Love us? Leave a tip!</a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1500px" id="band">
+  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:900px" id="band">
     <h2 class="w3-wide">MEET THE BAND!</h2>
     <p class="subtext w3-large"><i>"One good thing about music, when it hits you, you feel no pain" - Bob Marley</i></p>
     <div class="text w3-row w3-padding-16">
@@ -152,7 +178,7 @@ h2 {
   </div>
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-16" style="max-width:1500px" id="contact">
+  <div class="w3-container w3-content w3-padding-16" style="max-width:900px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="subtext w3-large w3-center"><i>Available for booking!</i></p>
     <div class="w3-row">
