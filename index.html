@@ -130,13 +130,13 @@ h2 {
   <!-- The Links Section -->
   <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:900px" id="links">
     <h2 class="w3-wide">LINKS</h2>
-    <p class="subtext w3-large"><i>Follow us on social media!</i></p>
+    <p class="subtext w3-large"><i>Check out our social media!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="link-container w3-container w3-padding-16"> <!-- Instagram Link -->
-        <div class="link w3-left">
+        <div class="link w3-left" style="position:relative;z-index: 1;">
           <img src="/images/Instagram-icon.png" alt="Instagram" style="width:70px;height:70px;">
         </div>
-        <div class="link w3-center w3-xlarge w3-padding-16">
+        <div class="link w3-center w3-large w3-padding-16">
           <a href="https://www.instagram.com/diggingforshovels/" target="_blank">Follow us on Instagram!</a>
         </div>
       </div>
@@ -145,7 +145,7 @@ h2 {
         <div class="link w3-left">
           <img src="/images/YouTube-icon.png" alt="YouTube" style="width:70px;height:70px;">
         </div>
-        <div class="link w3-center w3-xlarge w3-padding-16">
+        <div class="link w3-center w3-large w3-padding-16">
           <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">Follow us on YouTube!</a>
         </div>
       </div>
@@ -154,7 +154,7 @@ h2 {
         <div class="link w3-left">
           <img src="/images/Venmo-icon.png" alt="Venmo" style="width:70px;height:70px;">
         </div>
-        <div class="link w3-center w3-xlarge w3-padding-16">
+        <div class="link w3-center w3-large w3-padding-16">
           <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">Love us? Leave a tip!</a>
         </div>
       </div>
@@ -221,14 +221,6 @@ function myFunction() {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
   }
 }
 </script>
