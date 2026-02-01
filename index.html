@@ -1,235 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Digging for Shovels</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  overflow-x: hidden;
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.2;
-  background-image: url("/images/diggingforshovels-logo-desktop.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment:fixed;
-  min-height: 100%;
-}
-@media screen and (max-width: 800px) {
-  body::before {
-    background-image: url("/images/diggingforshovels-logo-mobile.png");
-  }
-}
-h1 {
-  font-weight: bold;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  font-size: 70px;
-  color: rgb(250, 247, 247);
-  text-shadow: 
-    -2px -2px 0 #4dadae,  
-     2px -2px 0 #4dadae,
-    -2px 2px 0 #4dadae,
-     2px 2px 0 #4dadae;
-}
-h2 {
-  font-weight: bold;
-  font-size: 45px;
-  color: rgb(250, 247, 247);
-  text-shadow: 
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
-}
-.subtext {
-  background-color: rgb(180, 241, 241);
-  border-radius: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  color: black;
-}
-.text {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 30px;
-  color: rgb(125, 229, 235);
-  text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  letter-spacing: 5px;
-}
-.link-container {
-  border-radius: 0.5em;
-  background-color: rgb(22, 158, 236, 0.5);
-}
-.link {
-  opacity: 1;
-}
-#info {
-  font-size: 1.32em;
-  color: black;
-  background-color: white;
-  height: 450px;
-  padding: 10px;
-}
-</style>
+  <title>Digging for Shovels</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#links" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LINKS</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
+<header class="site-header">
+  <nav class="site-navbar">
+    <a href="#home" class="navbar-links">Home</a>
+    <a href="#links" class="navbar-links">Our Links</a>
+    <a href="#about" class="navbar-links">About the Band</a>
+    <a href="#contact" class="navbar-links">Contact Us</a>
+  </nav>
+</header>  
+<main class="site-main">
+  <section class="site-section" id="home">
+    <img src="/images/diggingforshovels-logo-noBGxcf.png" class="home-header-img" alt="Digging for Shovels logo">
+    <div class="container" id="cards">
+      <div class="card" id="card-1">
+        <h3>Who We Are</h3>
+        <p>Digging for Shovels is a Boston-based indie rock duo consisting of guitarist/vocalist Rich Pin and drummer Jamison Nicosia. Our music blends catchy melodies with heartfelt lyrics, creating an immersive listening experience.</p>
+      </div>
+      <div class="card" id="card-2">
+        <h3>Our Music</h3>
+        <p>We have released several singles and EPs that showcase our unique sound. Our music is available on all major streaming platforms, including Spotify, Apple Music, and YouTube. Check out our latest releases and enjoy the journey with us!</p>
+      </div>
+      <div class="card" id="card-3">
+        <h3>Upcoming Shows</h3>
+        <p>We regularly perform at local venues and festivals around Boston. Stay tuned for our upcoming shows and events by following us on social media or checking our website for the latest updates.</p>
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#links" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINKS</a>
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Site header -->
-  <div class="w3-container w3-content w3-center w3-padding-48 style=max-width: 1500px">
-    <img src="/images/diggingforshovels-logo-noBGxcf.png" class="w3-round" alt="Digging for Shovels" style="width:100%">
-  </div>
-
-  <!-- The Links Section -->
-  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:900px" id="links">
-    <h2 class="w3-wide">LINKS</h2>
-    <p class="subtext w3-large"><i>Check out our social media!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="link-container w3-container w3-padding-16"> <!-- Instagram Link -->
-        <div class="link w3-left">
-          <a href="https://www.instagram.com/diggingforshovels/" target="_blank">
-            <img src="/images/Instagram-icon.png" alt="Instagram" style="width:70px;height:70px;">
-          </a>
-        </div>
-        <div class="link w3-center w3-large w3-padding-16">
-          <a href="https://www.instagram.com/diggingforshovels/" target="_blank">Follow us on Instagram!</a>
-        </div>
+  </section>
+  <section class="site-section" id="links">
+    <h2 class="section-heading">Our Links</h2>
+    <div class="container" id="instagram">
+      <div class="link-icon">
+        <a href="https://www.instagram.com/diggingforshovels/" target="_blank">
+          <img src="/images/Instagram-icon.png" alt="Instagram logo">
+        </a>
       </div>
-      <div class="w3-row w3-padding-16"></div> <!-- Spacer -->
-      <div class="link-container w3-card w3-container w3-padding-16"> <!-- YouTube Link -->
-        <div class="link w3-left">
-          <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">
-            <img src="/images/YouTube-icon.png" alt="YouTube" style="width:70px;height:70px;">
-          </a>
-        </div>
-        <div class="link w3-center w3-large w3-padding-16">
-          <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">Follow us on YouTube!</a>
-        </div>
-      </div>
-      <div class="w3-row w3-padding-16"></div> <!-- Spacer -->
-      <div class="link-container w3-card w3-container w3-padding-16"> <!-- Venmo Link -->
-        <div class="link w3-left">
-          <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">
-            <img src="/images/Venmo-icon.png" alt="Venmo" style="width:70px;height:70px;">
-          </a>
-        </div>
-        <div class="link w3-center w3-large w3-padding-16">
-          <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">Love us? Leave a tip!</a>
-        </div>
+      <div class="link-text">
+        <a href="https://www.instagram.com/diggingforshovels/" target="_blank">Follow us on Instagram!</a>
       </div>
     </div>
-  </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:900px" id="band">
-    <h2 class="w3-wide">MEET THE BAND!</h2>
-    <p class="subtext w3-large"><i>"One good thing about music, when it hits you, you feel no pain" - Bob Marley</i></p>
-    <div class="text w3-row w3-padding-16">
-      <div class="w3-half">
-        <img src="/images/FenwayPorchfest2025-006.jpg" class="w3-round" alt="Rich Pin" style="width:100%">
+    <div class="container" id="youtube">
+      <div class="link-icon">
+        <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">
+          <img src="/images/YouTube-icon.png" alt="YouTube logo">
+        </a>
+      </div>
+      <div class="link-text">
+        <a href="https://www.youtube.com/@DiggingforShovels" target="_blank">Follow us on YouTube!</a>
+      </div>
+    </div>
+    <div class="container" id="venmo">
+      <div class="link-icon">
+        <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">
+          <img src="/images/Venmo-icon.png" alt="Venmo logo">
+        </a>
+      </div>
+      <div class="link-text">
+        <a href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">Love us? Leave a tip!</a>
+      </div>
+    </div>
+  </section>
+  <section class="site-section" id="about">
+    <h2 class="section-heading">About the Band</h2>
+    <div class="container" id="band">
+      <div class="band-member" id="band-member-1">
+        <img src="/images/FenwayPorchfest2025-006.jpg" alt="Photo of Guitar Player">
         <p>Rich Pin</p>
       </div>
-      <div class="w3-half">
-        <img src="/images/FenwayPorchfest2025-010.jpg" class="w3-round" alt="Jamison Nicosia" style="width:100%">
+      <div class="band-member" id="band-member-2">
+        <img src="/images/FenwayPorchfest2025-010.jpg" alt="Photo of Drummer">
         <p>Jamison Nicosia</p>
       </div>
     </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-16" style="max-width:900px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="subtext w3-large w3-center"><i>Available for booking!</i></p>
-    <div class="w3-row">
-      <div class="w3-col m6" id="info">
-        <i class="fa fa-map-marker" style="width:20px"></i> Boston, US<br>
-        <i class="fa fa-phone" style="width:20px"></i> Phone: (978) 893-9339<br>
-        <i class="fa fa-envelope" style="width:20px"> </i> Email: diggingforshovels@gmail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192534.32286139933!2d-71.03899459377271!3d42.42583077188109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755975510312!5m2!1sen!2sus" 
-          width="100%" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+  </section>
+  <section class="site-section" id="contact">
+    <h2 class="section-heading">Contact Us</h2>
+    <div class="container" id="contact-info">
+      <i class="fa fa-map-marker" style="width:20px"></i> Boston, US<br>
+      <i class="fa fa-phone" style="width:20px"></i> Phone: (978) 893-9339<br>
+      <i class="fa fa-envelope" style="width:20px"> </i> Email: diggingforshovels@gmail.com<br>
     </div>
-    
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-soundcloud w3-hover-opacity"></i>
-  <i class="fa fa-youtube w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <div class="container" id="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192534.32286139933!2d-71.03899459377271!3d42.42583077188109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755975510312!5m2!1sen!2sus" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-soundcloud"></i>
+  <i class="fa fa-youtube"></i>
 </footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
