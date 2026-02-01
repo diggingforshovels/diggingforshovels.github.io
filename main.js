@@ -1,4 +1,4 @@
-const containers = document.querySelectorAll('.video-container');
+const containers = document.querySelectorAll('.video');
 const allVideos = document.querySelectorAll('.video-player');
 
 containers.forEach((container) => {
