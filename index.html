@@ -1,3 +1,12 @@
+<!--
+
+  Author: Richard Pinegar | Rich Pin Software
+  Date: January 2026
+  Site Info: Digging for Shovels Official Website
+  Content: Main HTML File
+  
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +14,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -113,7 +121,7 @@
           </div>
         </div>
       </a>
-      <a class="container-link" href="https://www.instagram.com/diggingforshovels/" target="_blank">
+      <a class="container-link" href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">
         <div class="container link-container" id="venmo">
           <div class="link-icon">
             <i class="fa-regular fa-credit-card fa-3x"></i>
@@ -127,15 +135,35 @@
   </section>
   <section class="site-section" id="about">
     <div class="section-container">
-      <h2 class="section-heading">About the Band</h2>
+      <h2 class="section-heading">Meet the Band</h2>
       <div class="container" id="band">
         <div class="band-member" id="band-member-1">
-          <img src="/images/FenwayPorchfest2025-006.jpg" alt="Photo of Guitar Player">
-          <p>Rich Pin</p>
+          <div class="band-member-image" id="band-member-1-image">
+            <img src="/images/FenwayPorchfest2025-006.jpg" alt="Photo of Guitar Player">
+          </div>
+          <div class="band-member-caption" id="band-member-1-caption">
+            <h3>Rich Pin</h3>
+            <p>Guitar and Vocals</p>
+          </div>
         </div>
         <div class="band-member" id="band-member-2">
-          <img src="/images/FenwayPorchfest2025-010.jpg" alt="Photo of Drummer">
-          <p>Jamison Nicosia</p>
+          <div class="band-member-image" id="band-member-2-image">
+            <img src="/images/FenwayPorchfest2025-010.jpg" alt="Photo of Drummer">
+          </div>
+          <div class="band-member-caption" id="band-member-2-caption">
+            <h3>Jamison Nicosia</h3>
+            <p>Drums and Vocals</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="band-member-bio">
+        <div class="card" id="band-member-1-card">
+          <h3>Bio</h3>
+          <p>Digging for Shovels is a Boston-based indie rock duo consisting of guitarist/vocalist Rich Pin and drummer Jamison Nicosia. Our music blends catchy melodies with heartfelt lyrics, creating an immersive listening experience.</p>
+        </div>
+        <div class="card" id="band-member-2-card">
+          <h3>Bio</h3>
+          <p>We have released several singles and EPs that showcase our unique sound. Our music is available on all major streaming platforms, including Spotify, Apple Music, and YouTube. Check out our latest releases and enjoy the journey with us!</p>
         </div>
       </div>
     </div>
@@ -144,25 +172,53 @@
     <div class="section-container">
       <h2 class="section-heading">Contact Us</h2>
       <div class="container" id="contact-info">
-        <i class="fa fa-map-marker" style="width:20px"></i> Boston, US<br>
-        <i class="fa fa-phone" style="width:20px"></i> Phone: (978) 893-9339<br>
-        <i class="fa fa-envelope" style="width:20px"> </i> Email: diggingforshovels@gmail.com<br>
-      </div>
-      <div class="container" id="map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192534.32286139933!2d-71.03899459377271!3d42.42583077188109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755975510312!5m2!1sen!2sus" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="card" id="contact-info">
+          <i class="fa-solid fa-location-dot"></i><span>Boston, US</span><br>
+          <i class="fa-solid fa-phone"></i>Phone: (978) 893-9339<br>
+          <i class="fa-solid fa-envelope"></i>Email: diggingforshovels@gmail.com<br>
+        </div>
+        <div class="card" id="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192534.32286139933!2d-71.03899459377271!3d42.42583077188109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755975510312!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
 </main>
 <footer class="site-footer">
-  <i class="fa fa-instagram"></i>
-  <i class="fa fa-soundcloud"></i>
-  <i class="fa fa-youtube"></i>
+  <div class="section-container" id="footer">
+    <div class="footer-links">
+      <a href="#home" class="footer-link">Home</a>
+      <a href="#links" class="footer-link">Our Links</a>
+      <a href="#about" class="footer-link">Meet the Band</a>
+      <a href="#contact" class="footer-link">Contact Us</a>
+    </div>
+    <div></div>
+    <div class="footer-icons">
+      <a class="container-link" href="https://www.instagram.com/diggingforshovels/" target="_blank">
+        <i class="fab fa-instagram fa-xl"></i>
+      </a>
+      <a class="container-link" href="https://bandcamp.com/" target="_blank">
+        <i class="fab fa-bandcamp fa-xl"></i>
+      </a>
+      <a class="container-link" href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">
+        <i class="fa-regular fa-credit-card fa-xl"></i>
+      </a>
+      <a class="container-link" href="https://soundcloud.com/discover" target="_blank">
+        <i class="fab fa-soundcloud fa-xl"></i>
+      </a>
+      <a class="container-link" href="https://www.youtube.com/@DiggingforShovels" target="_blank">
+        <i class="fab fa-youtube fa-xl"></i>
+      </a>
+    </div>
+    <div class="footer-image">
+      <img src="/images/diggingforshovels-logo-noBGxcf.png" alt="">
+    </div>
+  </div>
 </footer>
 <script src="main.js"></script>
 </body>

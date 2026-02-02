@@ -1,3 +1,10 @@
+/**
+ * Main Site Logic
+ * Handles video synchronization and link interactions.
+ * * @author [Richard Pinegar | Rich Pin Software]
+ * * @version 1.1.0
+ */
+
 const containers = document.querySelectorAll('.video');
 const allVideos = document.querySelectorAll('.video-player');
 

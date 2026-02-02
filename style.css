@@ -1,23 +1,27 @@
 /*
+
   Author: Richard Pinegar | Rich Pin Software
   Date: January 2026
   Site Info: Digging for Shovels Official Website
   Content: Main CSS Stylesheet
 
   Table of Contents:
-  1. Root Variables
-  2. Browser Reset
-  3. Global Styles
-  4. Header & Navigation Styles
-  5. Main Styles
-  6. Section Styles
-  - 6a. Home Page Styles
-  - 6b. Our Links Page Styles
-  - 6c. Meet the Band Page Styles
-  - 6d. Contact Us Page Styles
+  * 1. Root Variables
+  * 2. Browser Reset
+  * 3. Global Styles
+  * 4. Header & Navigation Styles
+  * 5. Main Styles
+  * 6. Section Styles
+  ** 6a. Home Page Styles
+  ** 6b. Our Links Page Styles
+  ** 6c. Meet the Band Page Styles
+  ** 6d. Contact Us Page Styles
+  * 7. Footer Styles
+
 */
 
 /* 1. Root Variables  */
+
 :root {
   --primary-color: rgba(158, 219, 255, 0.5);
   --on-hover-primary-color: rgba(158, 219, 255, 0.3);
@@ -29,7 +33,6 @@
   --section-width: 100%;
   --section-height: 100vh;
   --section-margin: 0 calc((100% - var(--main-width)) / 2);
-  /*--section-padding: calc(var(--header-height) + 3.0rem) 0;*/
   --section-padding: var(--header-height) 0;
   --content-border-radius: 10px;
   --content-margin: 3.0rem 0;
@@ -39,6 +42,7 @@
 }
 
 /* 2. Browser Reset */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -46,6 +50,7 @@
 }
 
 /* 3. Global Styles  */
+
 body {
   font-family: var(--site-font);
   overflow-x: hidden;
@@ -62,6 +67,7 @@ body::before {
 }
 
 /* 4. Header & Navigation Styles  */
+
 .site-header {
   position: fixed;
   top: 0;
@@ -83,16 +89,22 @@ body::before {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
-  padding: 1.0rem;
+  padding: 0 2.0rem 0 0;
+}
+.site-navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }
 
 /* 5. Main Styles  */
+
 main {
   margin: 0;
   padding: 0;
 }
 
 /* 6. Section Styles */
+
 .site-section {
   scroll-margin-top: var(--header-height);
   width: var(--section-width);
@@ -109,6 +121,9 @@ main {
 .site-section#links {
   background-color: var(--secondary-color);
 }
+.site-section#contact {
+  background-color: var(--secondary-color);
+}
 .container {
   display: flex;
   gap: var(--flex-gap);
@@ -118,6 +133,7 @@ main {
 }
 
   /* 6a. Home Page Styles  */
+
   .home-header-img {
     display: block;
     width: 40rem;
@@ -179,6 +195,7 @@ main {
   }
 
   /* 6b. Our Links Page Styles  */
+
   .container-link {
     text-decoration: none;
     margin: 0;
@@ -217,92 +234,105 @@ main {
   #venmo {
     color: rgb(14, 167, 73);
   }
-  
 
+  /* 6c. Meet the Band Page Styles  */
 
-
-
-
-
-/*
-
-
-h1 {
-  font-weight: bold;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  font-size: 70px;
-  color: rgb(250, 247, 247);
-  text-shadow: 
-    -2px -2px 0 #4dadae,  
-     2px -2px 0 #4dadae,
-    -2px 2px 0 #4dadae,
-     2px 2px 0 #4dadae;
-}
-h2 {
-  font-weight: bold;
-  font-size: 45px;
-  color: rgb(250, 247, 247);
-  text-shadow: 
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
-}
-.subtext {
-  background-color: rgb(180, 241, 241);
-  border-radius: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  color: black;
-}
-.text {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 30px;
-  color: rgb(125, 229, 235);
-  text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  letter-spacing: 5px;
-}
-.link-container {
-  border-radius: 0.5em;
-  background-color: rgb(22, 158, 236, 0.5);
-}
-.link {
-  opacity: 1;
-}
-.link-icon {
-  display: inline-block;
-  margin: 10px;
-}
-.link-icon img {
-  width:70px;
-  height:70px;
-}
-#info {
-  font-size: 1.32em;
-  color: black;
-  background-color: white;
-  height: 450px;
-  padding: 10px;
-}
-
-.band-member img {
-  width: 50rem;
-}
-
-#map iframe {
-  width: 100%;
-  height: 450px; 
-  border: 0;
-}
-
-@media (max-width: 576px) {
-  body::before {
-    background-image: url("/images/diggingforshovels-logo-mobile.png");
+  .band-member {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--content-border-radius);
+    height: 25.0rem;
+    background-color: var(--secondary-alt-color);
   }
-}*/
+  .band-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .band-member-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+  }
+
+  /* 6d. Contact Us Page Styles  */
+
+  .card#contact-info, .card#contact-map{
+    width: 100%;
+    height: 25rem;
+    background-color: var(--primary-color);
+  }
+  .card#contact-info {
+    line-height: 1.8rem;
+    font-size: var(--p-font-size);
+  }
+  .card#contact-info i {
+    width: 1.5rem;
+    height: auto;
+    margin: 0 1.5rem 0 0;
+  }
+  .card#contact-map iframe {
+    width: 100%;
+    height: 22rem;
+    border: 0;
+    border-radius: var(--content-border-radius);
+  }
+
+/* 7. Footer Styles  */
+
+footer {
+  width: 100vw;
+  height: 30rem;
+  margin: 0;
+  padding: 2.5rem 0;
+  color: var(--secondary-color);
+  background-color: var(--secondary-alt-color);
+}
+.section-container#footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  align-items: last baseline;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 1.0rem;
+  margin-bottom: 2.0rem;
+}
+.footer-links a {
+  color: var(--secondary-color);
+  font-size: var(--p-font-size);
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.footer-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+.footer-icons a {
+  color: var(--secondary-color);
+}
+.footer-image {
+  justify-self: end;
+  align-self: end;
+  margin: 0;
+  padding: 0;
+}
+.footer-image img {
+  display: flex;
+  justify-content: right;
+  width: 20rem;
+  height: auto;
+}
