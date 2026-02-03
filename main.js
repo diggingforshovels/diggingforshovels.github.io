@@ -34,12 +34,17 @@ containers.forEach((container) => {
   });
 });
 
-// Used to toggle the menu on small screens when clicking on the menu button
-/*function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}*/
+// Hamburger Menu Toggle
+function toggleMenu() {
+  var x = document.getElementById("myLinks");
+  
+  x.classList.toggle("open");
+}
+
+// Close Menu After Link is Clicked
+document.querySelectorAll('#myLinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    var x = document.getElementById("myLinks");
+    x.classList.remove("open");
+  });
+});

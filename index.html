@@ -20,12 +20,20 @@
 <body>
 <header class="site-header">
   <nav class="site-navbar">
-    <a href="#home" class="navbar-links">Home</a>
-    <a href="#links" class="navbar-links">Our Links</a>
-    <a href="#about" class="navbar-links">Meet the Band</a>
-    <a href="#contact" class="navbar-links">Contact Us</a>
+    <div id="myLinks">
+      <a href="#home" class="navbar-links">Home</a>
+      <a href="#links" class="navbar-links">Our Links</a>
+      <a href="#about" class="navbar-links">Meet the Band</a>
+      <a href="#contact" class="navbar-links">Contact Us</a>  
+    </div>
+    <!-- Hamburger menu icon for mobile display -->
+    <div class="hamburger-container">
+      <a href="javascript:void(0);" class="hamburger-nav-icon" onclick="toggleMenu()">
+        <i class="hamburger-icon fa-solid fa-bars fa-2xl"></i>
+      </a>
+    </div>
   </nav>
-</header>  
+</header>
 <main class="site-main">
   <section class="site-section" id="home">
     <div class="section-container">
@@ -79,7 +87,7 @@
     </div>
   </section>
   <section class="site-section" id="links">
-    <div class="section-container">
+    <div class="section-container" id="links-container">
       <h2 class="section-heading">Our Links</h2>
       <a class="container-link" href="https://www.instagram.com/diggingforshovels/" target="_blank">
         <div class="container link-container" id="instagram">
