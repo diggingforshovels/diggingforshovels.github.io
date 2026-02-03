@@ -530,9 +530,16 @@ footer {
     object-fit: cover;
     object-position: center
   }
+  .card#contact-info i {
+    margin:0;
+    padding:0;
+  }
   .contact-info-container div {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
+  }
+  .contact-info-container h3 {
+    display: none;
   }
   .section-container#footer {
     padding-top: 3.0rem;
