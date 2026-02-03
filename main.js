@@ -34,20 +34,6 @@ containers.forEach((container) => {
   });
 });
 
-
-/*const video = document.getElementById('myVideo');
-const btn = document.getElementById('unmuteBtn');
-
-btn.addEventListener('click', () => {
-  if (video.muted) {
-    video.muted = false;
-    btn.textContent = "Mute";
-  } else {
-    video.muted = true;
-    btn.textContent = "Unmute";
-  }
-});*/
-
 // Used to toggle the menu on small screens when clicking on the menu button
 /*function myFunction() {
   var x = document.getElementById("navDemo");
