@@ -1,0 +1,44 @@
+/*
+    Author: Richard Pinegar | Rich Pin Software
+    Date: January 2026
+    Site Info: Digging for Shovels Official Website
+    Content: CSS Contact Page Styles
+*/
+
+@import url("/css/variables.css");
+
+  .card#contact-info, .card#contact-map{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+  }
+  .card#contact-info {
+    line-height: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .contact-info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-info-container div {
+    font-size: var(--p-font-size);
+    font-weight: 550;
+  }
+  .card#contact-info i {
+    width: 1.5rem;
+    height: auto;
+    margin: 0 1.5rem 0 0;
+  }
+  .card#contact-map {
+    margin: 0;
+    padding: 0;
+  }
+  .card#contact-map iframe {
+    width: 100%;
+    height: 30.0rem;
+    border: 0;
+    border-radius: var(--content-border-radius);
+  }

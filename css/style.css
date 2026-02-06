@@ -1,0 +1,39 @@
+/*
+
+  Author: Richard Pinegar | Rich Pin Software
+  Date: January 2026
+  Site Info: Digging for Shovels Official Website
+  Content: Main CSS Stylesheet
+
+  Table of Contents:
+  * Browser Reset
+  * Global Styles
+
+*/
+
+@import url("/css/variables.css");
+
+/* Browser Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles  */
+
+body {
+  font-family: var(--site-font);
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+}

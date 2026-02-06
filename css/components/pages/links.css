@@ -1,0 +1,47 @@
+/*
+    Author: Richard Pinegar | Rich Pin Software
+    Date: January 2026
+    Site Info: Digging for Shovels Official Website
+    Content: CSS Links Page Styles
+*/
+
+@import url("/css/variables.css");
+
+  .container-link {
+    text-decoration: none;
+    margin: 0;
+  }
+  .link-container {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--content-padding);
+    border-radius: var(--content-border-radius);
+    background-color: var(--primary-color);
+  }
+  .link-container:hover {
+    background-color: var(--on-hover-primary-color);
+
+    .link-icon, .link-text {
+    transform: scale(1.1);
+    }
+  }
+  .link-text p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--secondary-alt-color);
+  }
+  #instagram {
+    color: rgb(208, 55, 208);
+  }
+  #youtube {
+    color: rgb(255, 0, 0);
+  }
+  #bandcamp {
+    color: rgb(18, 152, 241);
+  }
+  #soundcloud {
+    color: rgb(255, 140, 0);
+  }
+  #venmo {
+    color: rgb(14, 167, 73);
+  }
