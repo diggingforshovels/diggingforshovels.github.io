@@ -15,7 +15,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/components/header.css">
+  <link rel="stylesheet" href="/css/components/layout.css">
+  <link rel="stylesheet" href="/css/components/pages/home.css">
+  <link rel="stylesheet" href="/css/components/pages/links.css">
+  <link rel="stylesheet" href="/css/components/pages/band.css">
+  <link rel="stylesheet" href="/css/components/pages/contact.css">
+  <link rel="stylesheet" href="/css/components/footer.css">
+  <link rel="stylesheet" href="/css/components/responsive/responsive.css">
 </head>
 <body>
 <header class="site-header">
@@ -37,22 +45,24 @@
 <main class="site-main">
   <section class="site-section" id="home">
     <div class="section-container">
-      <img src="/images/diggingforshovels-logo-noBGxcf.png" class="home-header-img" alt="Digging for Shovels logo">
+      <img src="/images/diggingforshovels-logo.png" class="home-header-img" alt="Digging for Shovels logo">
       <div class="container" id="cards">
         <div class="card" id="card-1">
           <h3>Who We Are</h3>
-          <p>Digging for Shovels is a Boston-based indie rock duo consisting of guitarist/vocalist Rich Pin and drummer Jamison Nicosia. Our music blends catchy melodies with heartfelt lyrics, creating an immersive listening experience.</p>
+          <p>
+            Digging for Shovels is a Boston-based indie rock duo consisting of guitarist/vocalist Rich Pin and drummer/vocalist Jamison Nicosia. 
+            Our music blends catchy rock riffs mixed with rap, ska and reggae. We are an original band that also loves to put our own spin on covers songs!
+          </p>
         </div>
         <div class="card" id="card-2">
           <h3>Our Music</h3>
-          <p>We have released several singles and EPs that showcase our unique sound. Our music is available on all major streaming platforms, including Spotify, Apple Music, and YouTube. Check out our latest releases and enjoy the journey with us!</p>
-        </div>
-        <div class="card" id="card-3">
-          <h3>Upcoming Shows</h3>
-          <p>We regularly perform at local venues and festivals around Boston. Stay tuned for our upcoming shows and events by following us on social media or checking our website for the latest updates.</p>
+          <p>
+            We have an album in the works and we are available for booking! We love recording and playing live so we can spread our unique sound. 
+            Our music and social media is available on multiple platforms, including Bandcamp, Instagram,YouTube and SoundCloud. 
+          </p>
         </div>
       </div>
-      <div class="container">
+      <div class="container video-slider" id="video">
         <div class="video">
           <video class="video-player" id="video1" autoplay muted loop playsinline>
             <source src="/video/digging-for-shovels-guarantees-cover-song-video.mp4" type="video/mp4">
@@ -71,16 +81,6 @@
           <div class="video-caption">
             <h3>Digging For Shovels</h3>
             <p>Come Into The Wave [Original]</p>
-          </div>
-        </div>
-        <div class="video">
-          <video class="video-player" id="video3" autoplay muted loop playsinline>
-            <source src="/video/digging-for-shovels-fell-in-love-with-a-girl-cover-song-video.mp4" type="video/mp4">
-          </video>
-          <button class="mute-toggle">Unmute</button>
-          <div class="video-caption">
-            <h3>Digging For Shovels</h3>
-            <p>Fell In Love With A Girl by The White Stripes [Cover]</p>
           </div>
         </div>
       </div>
@@ -147,31 +147,35 @@
       <div class="container" id="band">
         <div class="band-member" id="band-member-1">
           <div class="band-member-image" id="band-member-1-image">
-            <img src="/images/FenwayPorchfest2025-006.jpg" alt="Photo of Guitar Player">
+            <img src="/images/Fenway-Porchfest-2025-Rich-Pin-guitar-player.jpg" alt="Photo of Rich Pin, Guitar Player">
           </div>
           <div class="band-member-caption" id="band-member-1-caption">
             <h3>Rich Pin</h3>
             <p>Guitar and Vocals</p>
+            <br>
+            <div class="band-member-bio">
+              <p>
+                A guitar player for over 20 years, Rich loves playing and creating music.  
+                His influences include rock, reggae, pop, grunge, punk, metal and ska.
+              </p>
+            </div>
           </div>
         </div>
         <div class="band-member" id="band-member-2">
           <div class="band-member-image" id="band-member-2-image">
-            <img src="/images/FenwayPorchfest2025-010.jpg" alt="Photo of Drummer">
+            <img src="/images/Fenway-Porchfest-2025-Jamison-Nicosia-drummer.jpg" alt="Photo of Jamison Nicosia, Drummer">
           </div>
           <div class="band-member-caption" id="band-member-2-caption">
             <h3>Jamison Nicosia</h3>
             <p>Drums and Vocals</p>
+            <br>
+            <div class="band-member-bio">
+              <p>
+                A drummer spanning multiple decades, Jamison has seen it all.  Whether punk, ska, rock or hip-hop, 
+                Jamison is comfortable keeping time in any genre.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="container" id="band-member-bio">
-        <div class="card" id="band-member-1-card">
-          <h3>Bio</h3>
-          <p>Digging for Shovels is a Boston-based indie rock duo consisting of guitarist/vocalist Rich Pin and drummer Jamison Nicosia. Our music blends catchy melodies with heartfelt lyrics, creating an immersive listening experience.</p>
-        </div>
-        <div class="card" id="band-member-2-card">
-          <h3>Bio</h3>
-          <p>We have released several singles and EPs that showcase our unique sound. Our music is available on all major streaming platforms, including Spotify, Apple Music, and YouTube. Check out our latest releases and enjoy the journey with us!</p>
         </div>
       </div>
     </div>
