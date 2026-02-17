@@ -187,15 +187,6 @@
     --content-padding: 0.5rem;
     --flex-gap: 0.5rem;
   }
-  .site-navbar {
-    justify-content: center;
-  }
-  .site-navbar a {
-    padding: 0 1.0rem 0 0;
-  }
-  .site-navbar a:last-child {
-    padding-right: 0;
-  }
   .section-container h2 {
     font-size: 1.5rem;
     text-align: center;
