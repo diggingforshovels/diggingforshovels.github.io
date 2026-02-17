@@ -15,7 +15,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mf-style.css">
+  <!-- <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/components/header.css">
   <link rel="stylesheet" href="/css/components/layout.css">
   <link rel="stylesheet" href="/css/components/pages/home.css">
@@ -23,11 +24,11 @@
   <link rel="stylesheet" href="/css/components/pages/band.css">
   <link rel="stylesheet" href="/css/components/pages/contact.css">
   <link rel="stylesheet" href="/css/components/footer.css">
-  <link rel="stylesheet" href="/css/components/responsive/responsive.css">
+  <link rel="stylesheet" href="/css/components/responsive/responsive.css"> -->
 </head>
 <body>
-<header class="site-header">
-  <nav class="site-navbar">
+<header>
+  <nav>
     <div id="myLinks">
       <a href="#home" class="navbar-links">Home</a>
       <a href="#links" class="navbar-links">Our Links</a>
@@ -43,10 +44,66 @@
   </nav>
 </header>
 <main class="site-main">
-  <section class="site-section" id="home">
+  <section id="links">
+    <div class="section-container" id="links-container">
+      <!-- <img src="/images/diggingforshovels-logo.png" class="home-header-img" alt="Digging for Shovels logo"> -->
+      <!-- <h2 class="section-heading">Our Links</h2> -->
+      <a class="container-link" href="https://www.instagram.com/diggingforshovels/" target="_blank">
+        <div class="container link-container" id="instagram">
+          <div class="link-icon">
+            <i class="fab fa-instagram fa-3x"></i>
+          </div>
+          <div class="link-text">
+            <p>Follow us on Instagram!</p>
+          </div>
+        </div>
+      </a>
+      <a class="container-link" href="https://www.youtube.com/@DiggingforShovels" target="_blank">
+        <div class="container link-container" id="youtube">
+          <div class="link-icon">
+            <i class="fab fa-youtube fa-3x"></i>
+          </div>
+          <div class="link-text">
+            <p>Follow us on YouTube!</p>
+          </div>
+        </div>
+      </a>
+      <a class="container-link" href="https://bandcamp.com/" target="_blank">
+        <div class="container link-container" id="bandcamp">
+          <div class="link-icon">
+            <i class="fab fa-bandcamp fa-3x"></i>
+          </div>
+          <div class="link-text">
+            <p>Follow us on Bandcamp! (Coming Soon!)</p>
+          </div>
+        </div>
+      </a>
+      <a class="container-link" href="https://soundcloud.com/discover" target="_blank">
+        <div class="container link-container" id="soundcloud">
+          <div class="link-icon">
+            <i class="fab fa-soundcloud fa-3x"></i>
+          </div>
+          <div class="link-text">
+            <p>Follow us on SoundCloud! (Coming Soon!)</p>
+          </div>
+        </div>
+      </a>
+      <a class="container-link" href="https://venmo.com/code?user_id=2311946720247808820&created=1756064964" target="_blank">
+        <div class="container link-container" id="venmo">
+          <div class="link-icon">
+            <i class="fa-regular fa-credit-card fa-3x"></i>
+          </div>
+          <div class="link-text">
+            <p>Tips are appreciated! (Venmo)</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section id="home">
     <div class="section-container">
-      <img src="/images/diggingforshovels-logo.png" class="home-header-img" alt="Digging for Shovels logo">
-      <div class="container" id="cards">
+      <!-- <img src="/images/diggingforshovels-logo.png" class="home-header-img" alt="Digging for Shovels logo"> -->
+      <div class="content-container" id="cards">
         <div class="card" id="card-1">
           <h3>Who We Are</h3>
           <p>
@@ -87,7 +144,7 @@
       </div>
     </div>
   </section>
-  <section class="site-section" id="links">
+  <!-- <section id="links">
     <div class="section-container" id="links-container">
       <h2 class="section-heading">Our Links</h2>
       <a class="container-link" href="https://www.instagram.com/diggingforshovels/" target="_blank">
@@ -141,11 +198,11 @@
         </div>
       </a>
     </div>
-  </section>
-  <section class="site-section" id="about">
+  </section> -->
+  <section id="about">
     <div class="section-container">
       <h2 class="section-heading">Meet the Band</h2>
-      <div class="container" id="band">
+      <div class="content-container" id="band">
         <div class="band-member" id="band-member-1">
           <div class="band-member-image" id="band-member-1-image">
             <img src="/images/Fenway-Porchfest-2025-Rich-Pin-guitar-player.jpg" alt="Photo of Rich Pin, Guitar Player">
@@ -181,10 +238,10 @@
       </div>
     </div>
   </section>
-  <section class="site-section" id="contact">
+  <section id="contact">
     <div class="section-container">
       <h2 class="section-heading">Contact Us</h2>
-      <div class="container" id="contact-container">
+      <div class="content-container" id="contact-container">
         <div class="card" id="contact-info">
           <div class="contact-info-container">
             <h3>Available for booking!</h3>
@@ -232,7 +289,7 @@
       </a>
     </div>
     <div class="footer-image">
-      <img src="/images/diggingforshovels-logo.png" alt="Digging for Shovels logo">
+      <!-- <img src="/images/diggingforshovels-logo.png" alt="Digging for Shovels logo"> -->
     </div>
   </div>
 </footer>

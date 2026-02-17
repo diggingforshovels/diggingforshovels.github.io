@@ -1,0 +1,41 @@
+/*
+
+    Author: Richard Pinegar | Rich Pin Software
+    Date: February 2026
+    Site Info: Digging for Shovels Official Website
+    Content: CSS Layout Styles - Mobile First
+
+*/
+
+section {
+  scroll-margin-top: var(--header-height);
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: calc(var(--header-height) + 1.0rem) 2.5%;
+}
+  #links {
+    background-color: var(--secondary-color);
+  }
+  #contact {
+    background-color: var(--secondary-color);
+  }
+
+.section-container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.section-container h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* .content-container {
+  display: flex;
+  gap: var(--flex-gap);
+  width: 100%;
+  height: auto;
+  margin: var(--content-margin);
+} */

@@ -1,0 +1,66 @@
+/*
+
+  Author: Richard Pinegar | Rich Pin Software
+  Date: February 2026
+  Site Info: Digging for Shovels Official Website
+  Content: Global CSS Stylesheet - Mobile First
+
+  Table of Contents:
+  * Global Variables
+  * Global Styles
+
+*/
+
+/* Global Variables */
+
+:root {
+  --primary-color: rgba(158, 219, 255, 0.5);
+  --on-hover-primary-color: rgba(158, 219, 255, 0.3);
+  --secondary-color: rgb(255, 255, 255);
+  --secondary-alt-color: rgb(0, 0, 0);
+  --site-font: "Lato", sans-serif;
+  --header-height: 5.0rem;
+  --section-width: 100%;
+  --section-height: 100vh;
+  --parent-container-width: 100%;
+  --parent-container-height: auto;
+  --section-container-width: 95%;
+  --child-container-height: auto;
+  /* --section-container-width: 60%; */
+  /* --section-margin: 0 calc((100% - var(--section-container-width)) / 2); */
+  /* --section-padding: var(--header-height) 0; */
+  --content-border-radius: 10px;
+  --content-margin: 3.0rem 0;
+  --content-padding: 1.5rem;
+  /* --flex-gap: 2.0rem; */
+  --flex-gap: 0.5rem;
+  --p-font-size: 1.1rem;
+}
+
+/* Global Styles  */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--site-font);
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+main {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
