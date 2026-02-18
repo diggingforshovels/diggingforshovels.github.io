@@ -20,7 +20,7 @@ section {
   max-width: var(--max-width-section);
   min-height: 100vh;
   margin: 0;
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-xs) var(--space-s);
 }
   #about {
     background-color: var(--bg-light);
@@ -40,8 +40,8 @@ section {
     padding: 0;
   }
     .section-container h2 {
-      font-size: 1.5rem;
-      text-align: center;
+      font-size: var(--font-size-l);
+      margin: 0 0 var(--space-s) 0;
     }
     .container {
       display: flex;

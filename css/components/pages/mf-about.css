@@ -18,7 +18,7 @@
 
   
 #card {
-  margin: 0 0 var(--space-s) 0;
+  margin: var(--space-xs) 0 var(--space-s) 0;
 }
 #card span {
   font-weight: var(--font-weight-bold);

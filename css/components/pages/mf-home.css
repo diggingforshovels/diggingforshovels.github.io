@@ -19,11 +19,11 @@
 #home-img {
   width: 100%;
   height: auto;
+  margin: var(--header-height) 0 var(--space-s) 0;
 }
   #home-img img {
     width: 100%;
     height: auto;
-    margin: var(--header-height) 0 var(--space-l);
     padding: 0;
   }
 
