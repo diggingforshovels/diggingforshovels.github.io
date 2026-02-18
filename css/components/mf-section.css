@@ -9,10 +9,11 @@
 
 section {
   scroll-margin-top: var(--header-height);
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  max-width: var(--max-width-section);
+  min-height: 100vh;
   margin: 0;
-  padding: var(--section-padding);
+  padding: var(--space-s) var(--space-m);
 }
   #links {
     background-color: var(--bg-light);
@@ -37,5 +38,5 @@ section {
   gap: var(--flex-gap);
   width: 100%;
   height: auto;
-  margin: var(--content-margin);
+  margin: var(--space-l) 0;
 } */

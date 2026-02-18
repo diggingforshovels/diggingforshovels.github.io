@@ -24,7 +24,7 @@
 /* Global Styles  */
 
 body {
-  font-family: var(--site-font);
+  font-family: var(--font-family);
   overflow-x: hidden;
 }
 body::before {

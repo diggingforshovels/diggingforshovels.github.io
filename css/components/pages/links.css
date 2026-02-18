@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     padding: var(--content-padding);
-    border-radius: var(--content-border-radius);
+    border-radius: var(--border-radius);
     background-color: var(--bg-main);
   }
   .link-container:hover {

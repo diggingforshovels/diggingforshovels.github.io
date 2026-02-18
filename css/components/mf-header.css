@@ -1,10 +1,10 @@
 /*
-
-    Author: Richard Pinegar | Rich Pin Software
-    Date: February 2026
-    Site Info: Digging for Shovels Official Website
-    Content: CSS Header Styles - Mobile First
-
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Website
+* Content: CSS Header Styles - Mobile First
 */
 
 header {
@@ -15,7 +15,7 @@ header {
   z-index: 1000;
   height: var(--header-height);
   margin: 0;
-  padding: var(--header-padding);
+  padding: 0;
   background-color: var(--bg-dark);
 }
 header * {
@@ -23,16 +23,16 @@ header * {
   justify-content: center;
 }
 header img {
-  width: 25.0rem;
-  height: auto;
+  width: 100px;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 nav {
-  width: var(--section-width);
+  max-width: var(--max-width-section);
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: var(--space-s) var(--space-m);
 }
 nav div a {
   color: var(--bg-light);

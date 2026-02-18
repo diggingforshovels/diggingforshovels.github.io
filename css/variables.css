@@ -10,14 +10,14 @@
   --bg-low: rgba(158, 219, 255, 0.3);
   --bg-light: rgb(255, 255, 255);
   --bg-dark: rgb(0, 0, 0);
-  --site-font: "Lato", sans-serif;
+  --font-family: "Lato", sans-serif;
   --header-height: 6.0rem;
   --section-container-width: 60%;
   --section-margin: 0 calc((100% - var(--section-container-width)) / 2);
   --section-padding: var(--header-height) 0;
-  --content-border-radius: 10px;
+  --border-radius: 10px;
   --content-margin: 3.0rem 0;
   --content-padding: 1.5rem;
   --flex-gap: 2.0rem;
-  --p-font-size: 1.1rem;
+  --font-size-p: 1.1rem;
 }

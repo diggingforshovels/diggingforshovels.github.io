@@ -9,7 +9,7 @@
     position: relative;
     flex: 1;
     overflow: hidden;
-    border-radius: var(--content-border-radius);
+    border-radius: var(--border-radius);
     height: auto;
     background-color: var(--bg-dark);
   }

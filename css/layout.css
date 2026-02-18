@@ -18,7 +18,7 @@ main {
   width: 100%;
   height: 100vh;
   margin: 0;
-  padding: var(--section-padding);
+  padding: var(--space-s) var(--space-m);
 }
 .section-container {
   width: var(--section-container-width);
@@ -37,5 +37,5 @@ main {
   gap: var(--flex-gap);
   width: 100%;
   height: auto;
-  margin: var(--content-margin);
+  margin: var(--space-l) 0;
 }

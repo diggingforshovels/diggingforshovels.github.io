@@ -16,7 +16,7 @@
     width: 100%;
     height: auto;
     padding: var(--content-padding);
-    border-radius: var(--content-border-radius);
+    border-radius: var(--border-radius);
     background-color: var(--bg-light);
   }
   .card h3 {
@@ -26,13 +26,13 @@
   .card p {
     color: var(--bg-dark);
     line-height: 1.5;
-    font-size: var(--p-font-size);
+    font-size: var(--font-size-p);
   }
   .video {
     position: relative;
     flex: 1;
     overflow: hidden;
-    border-radius: var(--content-border-radius);
+    border-radius: var(--border-radius);
     height: 30.0rem;
     background-color: var(--bg-dark);
   }
