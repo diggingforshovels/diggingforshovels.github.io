@@ -30,7 +30,7 @@ footer {
 }
 .footer-links a {
   color: var(--bg-light);
-  font-size: var(--font-size-p);
+  font-size: var(--font-size-m);
   font-weight: bold;
   text-decoration: none;
   width: fit-content;

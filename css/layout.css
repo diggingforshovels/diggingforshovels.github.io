@@ -26,7 +26,7 @@ main {
   margin: var(--section-margin);
   padding: 0;
 }
-.site-section#links {
+.site-section#home {
   background-color: var(--bg-light);
 }
 .site-section#contact {

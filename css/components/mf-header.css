@@ -3,9 +3,18 @@
 *
 * Author: Richard Pinegar | Rich Pin Software
 * Date: February 2026
-* Site Info: Digging for Shovels Official Website
+* Site Info: Digging for Shovels Official Band Website
 * Content: CSS Header Styles - Mobile First
+* 
+** TABLE OF CONTENTS:
+*** 1.0 - Header
+*** 2.0 - Navigation
+**** 2.1 - Hamburger Menu & Links
 */
+
+/* =============================================================
+   1.0 - Header 
+   =============================================================*/
 
 header {
   position: fixed;
@@ -28,6 +37,11 @@ header img {
   margin: 0;
   padding: 0;
 }
+
+/* =============================================================
+   2.0 - Navigation 
+   =============================================================*/
+
 nav {
   max-width: var(--max-width-section);
   height: 100%;
@@ -40,6 +54,11 @@ nav div a {
   font-weight: bold;
   font-size: 1.25rem;
 }
+
+  /* =============================================================
+    2.1 - Hamburger Menu & Links 
+    =============================================================*/
+
   .hamburger-container {
     align-items: center;
     justify-content: flex-end;

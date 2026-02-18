@@ -28,7 +28,7 @@
   .card p {
     color: var(--bg-dark);
     line-height: 1.5;
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-m);
   }
   .video {
     position: relative;

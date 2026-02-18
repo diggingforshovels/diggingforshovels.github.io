@@ -3,7 +3,7 @@
 *
 * Author: Richard Pinegar | Rich Pin Software
 * Date: February 2026
-* Site Info: Digging for Shovels Official Website
+* Site Info: Digging for Shovels Official Band Website
 * Content: Global CSS Stylesheet - Mobile First
 *
 ** TABLE OF CONTENTS:
@@ -24,9 +24,11 @@
   /* ===========================================================
      1.1 - Colors 
      ===========================================================*/
-  --primary-rgb: 158, 219, 255;
-  --primary-color: rgb(var(--primary-rgb));
-  --bg-main: rgba(var(--primary-rgb), 0.5);
+  --primary-rgb: 2, 195, 217;
+  --light-rgb: 255, 255, 255;
+  --dark-rgb: 0, 0, 0;
+  --primary-color: rgb(2, 195, 217);
+  --bg-main: var(--primary-color);
   --bg-low: rgba(var(--primary-rgb), 0.3);
   --bg-light: rgb(255, 255, 255);
   --bg-dark: rgb(0, 0, 0);
@@ -34,13 +36,17 @@
      1.2 - Fonts 
      ===========================================================*/
   --font-family: "Lato", sans-serif;
-  --font-size-p: 1.1rem;
+  --font-size-m: 1.0rem;
+  --font-weight-bold: 900;
+  --font-dark: var(--bg-dark);
+  --font-light: var(--bg-light);
   /* ===========================================================
      1.3 - Margin/Padding 
      ===========================================================*/
   --space-l: 2.0rem;
   --space-m: 1.5rem;
   --space-s: 1.0rem;
+  --space-xs: 0.5rem;
   /* ===========================================================
      1.4 - Width/Height 
      ===========================================================*/

@@ -1,42 +1,68 @@
 /*
-
-    Author: Richard Pinegar | Rich Pin Software
-    Date: February 2026
-    Site Info: Digging for Shovels Official Website
-    Content: CSS Layout Styles - Mobile First
-
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Layout Styles - Mobile First
+*
+** TABLE OF CONTENTS:
+*** 1.0 - Section Styles
+**** 1.1 - Section Containers
 */
+
+/* =============================================================
+   1.0 - Section Styles 
+   =============================================================*/
 
 section {
   scroll-margin-top: var(--header-height);
-  /* width: 100%; */
   max-width: var(--max-width-section);
   min-height: 100vh;
   margin: 0;
   padding: var(--space-s) var(--space-m);
 }
-  #links {
+  #about {
     background-color: var(--bg-light);
   }
   #contact {
     background-color: var(--bg-light);
   }
 
-.section-container {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-.section-container h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
+  /* =============================================================
+     1.1 - Section Containers 
+     =============================================================*/
 
-/* .content-container {
-  display: flex;
-  gap: var(--flex-gap);
-  width: 100%;
-  height: auto;
-  margin: var(--space-l) 0;
-} */
+  .section-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+    .section-container h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--flex-gap);
+      width: 100%;
+      height: auto;
+    }
+    .card {
+      width: 100%;
+      height: auto;
+      padding: var(--content-padding);
+      border-radius: var(--border-radius);
+      background-color: var(--bg-light);
+    }
+    .card h3 {
+      margin-bottom: 1.0rem;
+      color: var(--bg-dark);
+    }
+    .card p {
+      color: var(--bg-dark);
+      line-height: 1.5;
+      font-size: var(--font-size-m);
+    }
