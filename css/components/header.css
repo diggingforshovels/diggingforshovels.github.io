@@ -14,7 +14,7 @@
   z-index: 1000;
   width: 100%;
   height: var(--header-height);
-  background-color: var(--secondary-alt-color);
+  background-color: var(--bg-dark);
 }
 .site-navbar {
   display: flex;
@@ -25,7 +25,7 @@
   margin: var(--section-margin);
 } 
 .site-navbar a {
-  color: var(--secondary-color);
+  color: var(--bg-light);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
@@ -39,5 +39,5 @@
   display: none;
 }
 .hamburger-icon {
-  color: var(--secondary-color);
+  color: var(--bg-light);
 }

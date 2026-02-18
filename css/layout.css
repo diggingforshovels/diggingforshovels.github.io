@@ -27,10 +27,10 @@ main {
   padding: 0;
 }
 .site-section#links {
-  background-color: var(--secondary-color);
+  background-color: var(--bg-light);
 }
 .site-section#contact {
-  background-color: var(--secondary-color);
+  background-color: var(--bg-light);
 }
 .container {
   display: flex;

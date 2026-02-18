@@ -6,38 +6,49 @@
   Content: Global CSS Stylesheet - Mobile First
 
   Table of Contents:
-  * Global Variables
-  * Global Styles
+  * 1. Global Variables
+  ** 1a. Colors
+  ** 1b. Fonts
+  ** 1c. Components
+  * 2. Global Styles
 
 */
 
-/* Global Variables */
+/* 
+  1. Global Variables 
+*/
 
 :root {
-  --primary-color: rgba(158, 219, 255, 0.5);
-  --on-hover-primary-color: rgba(158, 219, 255, 0.3);
-  --secondary-color: rgb(255, 255, 255);
-  --secondary-alt-color: rgb(0, 0, 0);
+  /* 
+    1a. Colors 
+  */
+  --primary-rgb: 158, 219, 255;
+  --primary-color: rgb(var(--primary-rgb));
+  --bg-main: rgba(var(--primary-rgb), 0.5);
+  --bg-low: rgba(var(--primary-rgb), 0.3);
+  --bg-light: rgb(255, 255, 255);
+  --bg-dark: rgb(0, 0, 0);
+  /* 
+    1b. Fonts 
+  */
   --site-font: "Lato", sans-serif;
+  --p-font-size: 1.1rem;
+  /* 
+    1c. Components 
+  */
   --header-height: 5.0rem;
   --section-width: 100%;
   --section-height: 100vh;
+  --section-padding: 0 1.0rem;
   --parent-container-width: 100%;
   --parent-container-height: auto;
-  --section-container-width: 95%;
   --child-container-height: auto;
-  /* --section-container-width: 60%; */
-  /* --section-margin: 0 calc((100% - var(--section-container-width)) / 2); */
-  /* --section-padding: var(--header-height) 0; */
   --content-border-radius: 10px;
   --content-margin: 3.0rem 0;
-  --content-padding: 1.5rem;
-  /* --flex-gap: 2.0rem; */
   --flex-gap: 0.5rem;
-  --p-font-size: 1.1rem;
 }
 
-/* Global Styles  */
+/* 2. Global Styles */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -56,10 +67,10 @@ body::before {
   opacity: 0.5;
   width: 100%;
   height: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--bg-main);
 }
 main {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;

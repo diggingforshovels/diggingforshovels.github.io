@@ -8,8 +8,6 @@
 */
 
 header {
-  display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,36 +15,34 @@ header {
   z-index: 1000;
   height: var(--header-height);
   margin: 0;
-  padding: 0;
-  background-color: var(--secondary-alt-color);
+  padding: var(--section-padding);
+  background-color: var(--bg-dark);
+}
+header * {
+  display: flex;
+  justify-content: center;
 }
 nav {
-  /* overflow: visible; */
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: var(--section-container-width);
+  width: var(--section-width);
   height: 100%;
   margin: 0;
   padding: 0;
 }
 nav div a {
-  color: var(--secondary-color);
+  color: var(--bg-light);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
 }
   .hamburger-container {
-    display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .hamburger-nav-icon {
-    display: flex;
     width: fit-content;
-    height: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
   }
@@ -56,6 +52,7 @@ nav div a {
     background-color: rgb(0, 0, 0, 0.9);
   }
   #myLinks a {
+    justify-content: flex-start;
     padding: 1.0rem 0.5rem;
   }
   #myLinks.open {
@@ -79,5 +76,5 @@ nav div a {
   padding: 1.4rem 0.5rem;
 } */
 /* .hamburger-icon {
-  color: var(--secondary-color);
+  color: var(--bg-light);
 } */

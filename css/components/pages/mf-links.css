@@ -14,10 +14,10 @@
     align-items: center;
     padding: var(--content-padding);
     border-radius: var(--content-border-radius);
-    background-color: var(--primary-color);
+    background-color: var(--bg-main);
   }
   .link-container:hover {
-    background-color: var(--on-hover-primary-color);
+    background-color: var(--bg-low);
 
     .link-icon, .link-text {
     transform: scale(1.1);
@@ -26,7 +26,7 @@
   .link-text p {
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--secondary-alt-color);
+    color: var(--bg-dark);
   }
   #instagram {
     color: rgb(208, 55, 208);

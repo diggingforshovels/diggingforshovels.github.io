@@ -11,7 +11,7 @@
     overflow: hidden;
     border-radius: var(--content-border-radius);
     height: auto;
-    background-color: var(--secondary-alt-color);
+    background-color: var(--bg-dark);
   }
   .band-member img {
     width: 100%;

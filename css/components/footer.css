@@ -12,8 +12,8 @@ footer {
   height: 30rem;
   margin: 0;
   padding: 2.5rem 0;
-  color: var(--secondary-color);
-  background-color: var(--secondary-alt-color);
+  color: var(--bg-light);
+  background-color: var(--bg-dark);
 }
 .section-container#footer {
   display: grid;
@@ -29,7 +29,7 @@ footer {
   margin-bottom: 2.0rem;
 }
 .footer-links a {
-  color: var(--secondary-color);
+  color: var(--bg-light);
   font-size: var(--p-font-size);
   font-weight: bold;
   text-decoration: none;
@@ -45,7 +45,7 @@ footer {
   margin-bottom: 1.0rem;
 }
 .footer-icons a {
-  color: var(--secondary-color);
+  color: var(--bg-light);
 }
 .footer-image {
   justify-self: end;

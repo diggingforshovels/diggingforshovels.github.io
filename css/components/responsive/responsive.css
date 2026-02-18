@@ -55,9 +55,9 @@
         text-decoration: none;
     }
     .site-navbar a.hamburger-nav-icon:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--bg-light);
         .hamburger-icon {
-        color: var(--secondary-alt-color);
+        color: var(--bg-dark);
         }
     }
     .hamburger-container {
@@ -67,7 +67,7 @@
     }
     .hamburger-icon {
         display: block;
-        color: var(--secondary-color);
+        color: var(--bg-light);
     }
     .video-player {
         height: 25.0rem;
