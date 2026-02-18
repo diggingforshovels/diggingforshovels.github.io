@@ -15,12 +15,18 @@ header {
   z-index: 1000;
   height: var(--header-height);
   margin: 0;
-  padding: var(--section-padding);
+  padding: var(--header-padding);
   background-color: var(--bg-dark);
 }
 header * {
   display: flex;
   justify-content: center;
+}
+header img {
+  width: 25.0rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 nav {
   width: var(--section-width);

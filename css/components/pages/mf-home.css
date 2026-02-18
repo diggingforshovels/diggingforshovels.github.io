@@ -5,13 +5,13 @@
     Content: CSS Home Page Styles - Mobile First
 */
 
-  .home-header-img {
+  /* .home-header-img {
     display: block;
     width: 40rem;
     height: auto;
     margin: 3.0rem auto;
     padding: 0;
-  }
+  } */
   .card {
     width: 100%;
     height: auto;

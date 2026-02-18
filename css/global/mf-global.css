@@ -36,10 +36,13 @@
   /* 
     1c. Components 
   */
-  --header-height: 5.0rem;
+  --header-height: 6.0rem;
+  --header-padding-vertical: 0.8rem;
+  --header-padding-horizontal: 1.0rem;
+  --header-padding: var(--header-padding-vertical) var(--header-padding-horizontal);
   --section-width: 100%;
   --section-height: 100vh;
-  --section-padding: 0 1.0rem;
+  --section-padding: 0.8rem 1.0rem;
   --parent-container-width: 100%;
   --parent-container-height: auto;
   --child-container-height: auto;
