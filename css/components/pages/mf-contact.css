@@ -5,14 +5,21 @@
     Content: CSS Contact Page Styles - Mobile First
 */
 
-  .card#contact-info, .card#contact-map{
+  #contact-info, #contact-map {
     width: 100%;
     height: auto;
-    background-color: var(--bg-main);
   }
-  .card#contact-info {
+  #contact-info {
     line-height: 1.8rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.075rem;
+  }
+  #contact-info img {
+    width: 100%;
+    margin: 0 0 var(--space-m) 0;
+  }
+  #contact-info i {
+    color: var(--bg-main);
+    padding: var(--space-l) 0;
   }
   .contact-info-container {
     width: 100%;

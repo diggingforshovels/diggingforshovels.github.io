@@ -41,7 +41,7 @@ section {
   }
     .section-container h2 {
       font-size: var(--font-size-l);
-      margin: 0 0 var(--space-s) 0;
+      margin: var(--space-xs) 0 var(--space-s) 0;
     }
     .container {
       display: flex;
@@ -49,18 +49,20 @@ section {
       gap: var(--flex-gap);
       width: 100%;
       height: auto;
+      padding: 0;
+      margin: 0 0 var(--space-s) 0;
     }
     .card {
       width: 100%;
       height: auto;
-      padding: var(--content-padding);
-      border-radius: var(--border-radius);
-      background-color: var(--bg-light);
+      padding: 0;
+      /* border-radius: var(--border-radius); */
+      /* background-color: var(--bg-light); */
     }
-    .card h3 {
+    /* .card h3 {
       margin-bottom: 1.0rem;
       color: var(--bg-dark);
-    }
+    } */
     .card p {
       color: var(--bg-dark);
       line-height: 1.5;

@@ -10,8 +10,8 @@
     flex: 1;
     overflow: hidden;
     border-radius: var(--border-radius);
+    width: 100%;
     height: auto;
-    background-color: var(--bg-dark);
   }
   .band-member img {
     width: 100%;
@@ -22,12 +22,15 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 15px;
+    padding: var(--space-xs);
     background: linear-gradient(transparent, rgba(0,0,0,0.95));
-    color: white;
+    color: var(--font-light);
   }
   .band-member-caption h3 {
     color: rgb(158, 219, 255);
     text-shadow: 0 0 5px black;
-    font-size: 1.5rem;
+    font-size: var(--font-size-l);
+  }
+  #bio h2 {
+    margin: var(--space-xs) 0 var(--space-s) 0;
   }
