@@ -31,6 +31,3 @@
     text-shadow: 0 0 5px black;
     font-size: var(--font-size-l);
   }
-  #bio h2 {
-    margin: var(--space-xs) 0 var(--space-s) 0;
-  }
