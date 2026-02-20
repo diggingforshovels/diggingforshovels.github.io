@@ -16,12 +16,7 @@
    5.0 - Home Page Image 
    =============================================================*/
 
-#home-img {
-  width: 100%;
-  height: auto;
-  margin: var(--header-height) 0 var(--space-s) 0;
-}
-#home-img img {
+#home img {
   width: 100%;
   height: auto;
   padding: 0;
@@ -53,7 +48,7 @@
   transform: scale(1.1);
   }
 }
-.social-caption p {
+.social-caption {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-m);
   color: var(--bg-dark);

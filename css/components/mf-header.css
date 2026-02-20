@@ -34,7 +34,7 @@ header * {
 }
 header img {
   width: 100px;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 }
