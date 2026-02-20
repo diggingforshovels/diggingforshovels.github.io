@@ -56,6 +56,7 @@ section {
   .container {
     display: flex;
     flex-direction: column;
+    gap: var(--flex-gap);
     width: 100%;
     height: auto;
     padding: 0;
