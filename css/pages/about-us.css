@@ -34,13 +34,9 @@
   border-radius: var(--border-radius);
   background-color: var(--bg-dark);
 }
-/* .video:last-child {
-  display: none;
-} */
 .video-player {
   width: 100%;
   height: 250px;
-  /* height: clamp(275px, 45vh, 800px); */
   object-fit: contain;
 }
 .video-caption {

@@ -21,19 +21,11 @@ footer {
   color: var(--bg-light);
   background-color: var(--bg-dark);
 }
-footer div.section-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  align-items: last baseline;
-  width: 100%;
-  max-width: var(--max-width-section);
-} 
+footer a {
+  color: var(--bg-light);
+}
 
-  /* =============================================================
-   11.1 - Footer Links
-   =============================================================*/
-
+  /*** 11.1 - Footer Links ***/
   .footer-links {
     display: flex;
     flex-direction: column;
@@ -42,18 +34,8 @@ footer div.section-container {
     gap: var(--flex-gap);
     margin-bottom: var(--space-l);
   }
-  .footer-links a {
-    color: var(--bg-light);
-    font-size: var(--font-size-m);
-    font-weight: bold;
-    text-decoration: none;
-    width: fit-content;
-  }
   .footer-icons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-  }
-  .footer-icons a {
-    color: var(--bg-light);
   }

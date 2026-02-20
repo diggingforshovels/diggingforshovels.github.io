@@ -16,11 +16,11 @@
    5.0 - Home Page Image 
    =============================================================*/
 
-#home img {
+/* #home img {
   width: 100%;
   height: auto;
   padding: 0;
-}
+} */
 
 /* =============================================================
    6.0 - Social Links 
@@ -31,11 +31,12 @@
   margin: 0;
 }
 .social-container {
-  display: grid;
+  flex-direction: row;
+  /* display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr; */
   align-items: center;
-  padding: var(--space-xs);
+  padding: var(--space-s);
   margin: 0;
   border-radius: var(--border-radius);
   background-color: rgba(var(--light-rgb), 0.9);
@@ -72,3 +73,10 @@
   #venmo {
     color: rgb(14, 167, 73);
   }
+
+
+@media (min-height: 768px) {
+  .social-container {
+    padding: var(--space-xs)
+  }
+}

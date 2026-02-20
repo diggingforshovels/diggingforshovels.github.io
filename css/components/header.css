@@ -44,16 +44,16 @@ header img {
     =============================================================*/
 
   nav {
-    max-width: var(--max-width-section);
+    max-width: var(--max-width-section); /* consider updating variable for mobile */
     height: 100%;
     margin: 0;
     padding: var(--space-s) var(--space-m);
   }
   nav div a {
     color: var(--bg-light);
-    text-decoration: none;
+    /* text-decoration: none;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.25rem; */
   }
 
   /* =============================================================
