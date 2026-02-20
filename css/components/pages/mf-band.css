@@ -1,9 +1,18 @@
 /*
-    Author: Richard Pinegar | Rich Pin Software
-    Date: February 2026
-    Site Info: Digging for Shovels Official Website
-    Content: CSS Band Page Styles - Mobile First
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Band Page Styles - Mobile First
+*
+** TABLE OF CONTENTS:
+*** 9.0 - Band Members
 */
+
+/* =============================================================
+   9.0 - Band Members 
+   =============================================================*/
 
   .band-member {
     position: relative;

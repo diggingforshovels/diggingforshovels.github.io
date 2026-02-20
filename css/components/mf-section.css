@@ -7,12 +7,12 @@
 * Content: CSS Layout Styles - Mobile First
 *
 ** TABLE OF CONTENTS:
-*** 1.0 - Section Styles
-**** 1.1 - Section Containers
+*** 4.0 - Section Styles
+**** 4.1 - Section Containers
 */
 
 /* =============================================================
-   1.0 - Section Styles 
+   4.0 - Section Styles 
    =============================================================*/
 
 section {
@@ -22,16 +22,16 @@ section {
   margin: 0;
   padding: var(--space-xs) var(--space-s);
 }
-  #about {
-    background-color: var(--bg-light);
-  }
-  #contact {
-    background-color: var(--bg-light);
-  }
+#about {
+  background-color: var(--bg-light);
+}
+#contact {
+  background-color: var(--bg-light);
+}
 
   /* =============================================================
-     1.1 - Section Containers 
-     =============================================================*/
+    4.1 - Section Containers 
+    =============================================================*/
 
   .section-container {
     width: 100%;
@@ -39,26 +39,26 @@ section {
     margin: 0;
     padding: 0;
   }
-    .section-container h2 {
-      font-size: var(--font-size-l);
-      margin: calc(var(--header-height) + var(--space-xs)) 0 var(--space-s) 0;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: var(--flex-gap);
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin: 0 0 var(--space-s) 0;
-    }
-    .card {
-      width: 100%;
-      height: auto;
-      padding: 0;
-    }
-    .card p {
-      color: var(--bg-dark);
-      line-height: 1.5;
-      font-size: var(--font-size-m);
-    }
+  .section-container h2 {
+    font-size: var(--font-size-l);
+    margin: calc(var(--header-height) + var(--space-xs)) 0 var(--space-s) 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flex-gap);
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 var(--space-s) 0;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .card p {
+    color: var(--bg-dark);
+    line-height: 1.5;
+    font-size: var(--font-size-m);
+  }

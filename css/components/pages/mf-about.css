@@ -7,46 +7,57 @@
 * Content: CSS About Page Styles - Mobile First
 *
 ** TABLE OF CONTENTS:
+*** 7.0 - Cards
+*** 8.0 - Video
 */
+
+/* =============================================================
+   7.0 - Cards 
+   =============================================================*/
 
 #card span {
   font-weight: var(--font-weight-bold);
   font-size: 1.125rem;
   color: var(--primary-color);
 }
-  .video {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-    width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--bg-dark);
-  }
-  .video:last-child {
-    display: none;
-  }
-  .video-player {
-    width: 100%;
-    height: clamp(275px, 45vh, 800px);
-    object-fit: contain;
-  }
-  .video-caption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: var(--space-xs);
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: var(--font-light);
-  }
-  .mute-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    background: rgba(0,0,0,0.6);
-    color: var(--font-light);
-    border: 1px solid var(--bg-light);
-    padding: var(--space-xs);
-    cursor: pointer;
-  }
+
+/* =============================================================
+   8.0 - Video 
+   =============================================================*/
+
+.video {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-dark);
+}
+.video:last-child {
+  display: none;
+}
+.video-player {
+  width: 100%;
+  height: clamp(275px, 45vh, 800px);
+  object-fit: contain;
+}
+.video-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: var(--space-xs);
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: var(--font-light);
+}
+.mute-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  color: var(--font-light);
+  border: 1px solid var(--bg-light);
+  padding: var(--space-xs);
+  cursor: pointer;
+}

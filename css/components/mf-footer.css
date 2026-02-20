@@ -1,11 +1,19 @@
 /*
-
-    Author: Richard Pinegar | Rich Pin Software
-    Date: February 2026
-    Site Info: Digging for Shovels Official Website
-    Content: CSS Footer Styles - Mobile First
-
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Footer Styles - Mobile First
+*
+** TABLE OF CONTENTS:
+*** 11.0 - Footer
+**** 11.1 - Footer Links
 */
+
+/* =============================================================
+   11.0 - Footer 
+   =============================================================*/
 
 footer {
   margin: 0;
@@ -21,6 +29,11 @@ footer div.section-container {
   width: 100%;
   max-width: var(--max-width-section);
 } 
+
+  /* =============================================================
+   11.1 - Footer Links
+   =============================================================*/
+
   .footer-links {
     display: flex;
     flex-direction: column;
@@ -44,29 +57,3 @@ footer div.section-container {
   .footer-icons a {
     color: var(--bg-light);
   }
-  /* .footer-image {
-    justify-self: end;
-    align-self: end;
-    margin: 0;
-    padding: 0;
-  } */
-  /* .footer-image img {
-    display: flex;
-    justify-content: right;
-    width: 20rem;
-    height: auto;
-  } */
-
-
-
-/* .footer-links {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-  row-gap: 1.0rem;
-  margin-bottom: 2.0rem;
-} */
-/* .footer-links a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-} */
