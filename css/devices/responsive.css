@@ -10,44 +10,78 @@
 
 /** 8.0 - Responsive Styles **/
 
-@media (min-width: 768px) {
+@media only screen and (orientation: landscape) {
   :root {
-    --img-container-height: 500px;
+    --site-content-width: 60%;
   }
-  section {
+  section, header, footer {
     display: flex;
     justify-content: center;
   }
-  h2, h3 {
-    font-size: var(--font-size-l);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --site-content-width: 80%;
+    --img-container-height: 600px;
   }
-  p {
-    font-size: var(--font-size-m);
-  }
-  a {
-    font-size: var(--font-size-m);
-  }
-  header {
+  section, header, footer {
     display: flex;
     justify-content: center;
   }
-  nav {
-    width: 80%;
-  }
+  
   #nav-links-container a {
     justify-content: center;
   }
   #nav-links-container.open {
     width: 35%;
   }
-  .section-container {
-    width: 80%;
-  }
   .social-container {
     flex-direction: column;
   }
-  footer {
-    display: flex;
-    justify-content: center;
+
+  @media only screen and (min-height: 1024px) {
+    h2, h3 {
+      font-size: var(--font-size-l);
+    }
+    p {
+      font-size: var(--font-size-m);
+    }
+    a {
+      font-size: var(--font-size-m);
+    }
+  }
+
+  @media only screen and (orientation: landscape) {
+    :root {
+      --site-content-width: 60%;
+      --img-container-height: 400px;
+    }
+    .social-container {
+      flex-direction: row;
+    }
+    .band-member img {
+      height: 275px;
+      object-fit: cover;
+    }
+    #contact-us img:last-child {
+      padding: 0 2.5%;
+      
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .band-member img {
+    object-fit: cover;
+  }
+
+  @media only screen and (orientation: landscape) {
+    :root {
+      --img-container-height: 600px;
+    }
+    .band-member img {
+      height: 375px;
+    }
   }
 }

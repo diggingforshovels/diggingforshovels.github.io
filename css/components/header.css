@@ -36,7 +36,7 @@ header img {
   /**** 5.1 - Navbar ****/
 
   nav {
-    max-width: var(--max-width-section); /* consider updating variable for mobile */
+    width: var(--site-content-width);
     height: 100%;
     margin: 0;
     padding: var(--space-s) var(--space-m);
