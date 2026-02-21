@@ -44,8 +44,10 @@ header img {
 
   /**** 5.2 - Hamburger Menu & Links ****/
 
-  #hamburger-link {
+  nav .container a {
     justify-content: flex-end;
+  }
+  #hamburger-link {
     color: var(--bg-light);
   }
   #nav-links-container {

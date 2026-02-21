@@ -89,7 +89,8 @@ section {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0 var(--space-s);
+  padding: 0;
+  background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
 }
 h2 {
   font-size: var(--font-size-m);
@@ -115,7 +116,7 @@ a {
   width: var(--site-content-width);
   height: auto;
   margin: 0;
-  padding: 0 0 var(--space-m) 0;
+  padding: 0 var(--space-m) var(--space-m) var(--space-m);
 }
 .container {
   display: flex;

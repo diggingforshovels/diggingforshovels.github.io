@@ -10,78 +10,77 @@
 
 /** 8.0 - Responsive Styles **/
 
-@media only screen and (orientation: landscape) {
-  :root {
-    --site-content-width: 60%;
-  }
-  section, header, footer {
-    display: flex;
-    justify-content: center;
+@media only screen and (min-height: 768px) {
+  .video-player {
+    height: calc(var(--img-container-height) + 185px);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-height: 1024px) {
   :root {
-    --site-content-width: 80%;
+    --img-container-height: 375px;
+  }
+  h2, h3 {
+    font-size: var(--font-size-l);
+  }
+  p {
+    font-size: var(--font-size-m);
+  }
+  a {
+    font-size: var(--font-size-m);
+  }
+}
+
+@media only screen and (min-height: 1366px) {
+  :root {
     --img-container-height: 600px;
   }
-  section, header, footer {
-    display: flex;
-    justify-content: center;
+  .video-player {
+    height: calc(var(--img-container-height) + 300px);
   }
-  
-  #nav-links-container a {
-    justify-content: center;
-  }
-  #nav-links-container.open {
-    width: 35%;
-  }
-  .social-container {
-    flex-direction: column;
-  }
+}
 
-  @media only screen and (min-height: 1024px) {
-    h2, h3 {
-      font-size: var(--font-size-l);
-    }
-    p {
-      font-size: var(--font-size-m);
-    }
-    a {
-      font-size: var(--font-size-m);
-    }
-  }
+  /**** 8.1 - Small Tablet ****/
 
-  @media only screen and (orientation: landscape) {
+  @media only screen and (min-width: 768px) {
     :root {
-      --site-content-width: 60%;
-      --img-container-height: 400px;
+      --site-content-width: 80%;
+    }
+    section, header, footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+    #nav-links-container a {
+      justify-content: center;
+    }
+    #nav-links-container.open {
+      width: 35%;
     }
     .social-container {
-      flex-direction: row;
+      flex-direction: column;
     }
+
+    @media only screen and (orientation: landscape) {
+      :root {
+        --site-content-width: 60%;
+      }
+      .social-container {
+        flex-direction: row;
+      }
+    }
+  }
+
+  /**** 8.2 - Large Tablet ****/
+
+  @media only screen and (min-width: 1024px) {
     .band-member img {
-      height: 275px;
       object-fit: cover;
     }
-    #contact-us img:last-child {
-      padding: 0 2.5%;
-      
-    }
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .band-member img {
-    object-fit: cover;
   }
 
-  @media only screen and (orientation: landscape) {
-    :root {
-      --img-container-height: 600px;
-    }
-    .band-member img {
-      height: 375px;
-    }
+  /**** 8.3 - Small Laptop ****/
+
+  @media only screen and (min-width: 1366px) {
+    /* Placeholder */
   }
-}
