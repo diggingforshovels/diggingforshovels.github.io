@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Responsive Styles
+*
+*/
+
+/** 8.0 - Responsive Styles **/
+
+@media (min-width: 768px) {
+  :root {
+    --img-container-height: 500px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+  }
+  h2, h3 {
+    font-size: var(--font-size-l);
+  }
+  p {
+    font-size: var(--font-size-m);
+  }
+  a {
+    font-size: var(--font-size-m);
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    width: 80%;
+  }
+  #nav-links-container a {
+    justify-content: center;
+  }
+  #nav-links-container.open {
+    width: 35%;
+  }
+  .section-container {
+    width: 80%;
+  }
+  .social-container {
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
