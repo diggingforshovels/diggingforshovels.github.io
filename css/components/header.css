@@ -6,15 +6,9 @@
 * Site Info: Digging for Shovels Official Band Website
 * Content: CSS Header Styles - Mobile First
 * 
-** TABLE OF CONTENTS:
-*** 3.0 - Header
-**** 3.1 - Navigation
-**** 3.2 - Hamburger Menu & Links
 */
 
-/* =============================================================
-   3.0 - Header 
-   =============================================================*/
+/** 5.0 - Header Styles **/
 
 header {
   position: fixed;
@@ -39,9 +33,7 @@ header img {
   padding: 0;
 }
 
-  /* =============================================================
-    3.1 - Navigation 
-    =============================================================*/
+  /**** 5.1 - Navbar ****/
 
   nav {
     max-width: var(--max-width-section); /* consider updating variable for mobile */
@@ -49,39 +41,24 @@ header img {
     margin: 0;
     padding: var(--space-s) var(--space-m);
   }
-  nav div a {
-    color: var(--bg-light);
-    /* text-decoration: none;
-    font-weight: bold;
-    font-size: 1.25rem; */
-  }
 
-  /* =============================================================
-    3.2 - Hamburger Menu & Links 
-    =============================================================*/
+  /**** 5.2 - Hamburger Menu & Links ****/
 
-  .hamburger-container {
-    align-items: center;
+  #hamburger-link {
     justify-content: flex-end;
-    width: 100%;
-    height: auto;
+    color: var(--bg-light);
   }
-  .hamburger-nav-icon {
-    width: fit-content;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  #myLinks {
+  #nav-links-container {
     display: none;
-    padding: 1.0rem;
+    padding: var(--space-s);
     background-color: rgb(0, 0, 0, 0.9);
   }
-  #myLinks a {
+  #nav-links-container a {
     justify-content: flex-start;
-    padding: 1.0rem 0.5rem;
+    padding: var(--space-s) var(--space-xs);
+    color: var(--bg-light);
   }
-  #myLinks.open {
+  #nav-links-container.open {
     display: flex !important; 
     flex-direction: column;
     position: absolute;

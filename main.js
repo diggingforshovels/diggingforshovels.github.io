@@ -35,15 +35,15 @@ containers.forEach((container) => {
 
 // Hamburger Menu Toggle
 function toggleMenu() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("nav-links-container");
   
   x.classList.toggle("open");
 }
 
 // Close Hamburger Menu after link is clicked
-document.querySelectorAll('#myLinks a').forEach(link => {
+document.querySelectorAll('#nav-links-container a').forEach(link => {
   link.addEventListener('click', () => {
-    var x = document.getElementById("myLinks");
+    var x = document.getElementById("nav-links-container");
     x.classList.remove("open");
   });
 });

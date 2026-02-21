@@ -6,14 +6,9 @@
 * Site Info: Digging for Shovels Official Band Website
 * Content: CSS Footer Styles - Mobile First
 *
-** TABLE OF CONTENTS:
-*** 11.0 - Footer
-**** 11.1 - Footer Links
 */
 
-/* =============================================================
-   11.0 - Footer 
-   =============================================================*/
+/** 6.0 - Footer Styles **/
 
 footer {
   margin: 0;
@@ -21,21 +16,19 @@ footer {
   color: var(--bg-light);
   background-color: var(--bg-dark);
 }
-footer a {
-  color: var(--bg-light);
-}
 
-  /*** 11.1 - Footer Links ***/
-  .footer-links {
+  /*** 6.1 - Footer Links ***/
+
+  footer a {
+    color: var(--bg-light);
+  }
+  #footer-links, #footer-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--flex-gap);
-    margin-bottom: var(--space-l);
+    gap: var(--flex-gap-l);
   }
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+  #footer-links {
+    flex-direction: column;
+    margin-bottom: var(--space-l);
   }

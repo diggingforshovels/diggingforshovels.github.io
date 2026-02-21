@@ -6,24 +6,12 @@
 * Site Info: Digging for Shovels Official Band Website
 * Content: Global CSS Stylesheet - Mobile First
 *
-** TABLE OF CONTENTS:
-*** 1.0 - Global Variables
-**** 1.1 - Colors
-**** 1.2 - Fonts
-**** 1.3 - Margin/Padding
-**** 1.4 - Width/Height
-**** 1.5 - Other
-*** 2.0 - Global Element Styles
-*** 3.0 - Global Container Styles
-*** 4.0 - Global Image Styles
 */
 
-/* =============================================================
-   1.0 - Global Variables 
-   =============================================================*/
+/** 1.0 - Global Variables **/
 
 :root {
-  /*** 1.1 - Colors ***/
+  /**** 1.1 - Colors ****/
   --primary-rgb: 2, 195, 217;
   --light-rgb: 255, 255, 255;
   --dark-rgb: 0, 0, 0;
@@ -33,32 +21,34 @@
   --bg-light: rgb(255, 255, 255);
   --bg-dark: rgb(0, 0, 0);
 
-  /*** 1.2 - Fonts ***/
+  /**** 1.2 - Fonts ****/
   --font-family: "Lato", sans-serif;
   --font-size-m: 1.0rem;
   --font-size-l: 1.5rem;
   --font-weight-bold: 900;
   --font-dark: var(--bg-dark);
   --font-light: var(--bg-light);
+  --font-primary: var(--primary-color);
 
-  /*** 1.3 - Margin/Padding ***/
+  /**** 1.3 - Margin/Padding ****/
   --space-l: 2.0rem;
   --space-m: 1.5rem;
   --space-s: 1.0rem;
   --space-xs: 0.5rem;
 
-  /*** 1.4 - Width/Height ***/
+  /**** 1.4 - Width/Height ****/
   --header-height: 110px;
+  --img-container-height: 250px;
   --max-width-section: 1200px;
 
-  /*** 1.5 - Other ***/
+  /**** 1.5 - Other ****/
   --border-radius: 10px;
-  --flex-gap: 0.8rem;
+  --flex-gap-l: 1.5rem;
+  --flex-gap-m: 1.0rem;
+  --flex-gap-s: 0.5rem;
 }
 
-/* ===========================================================
-   2.0 - Global Element Styles 
-   ===========================================================*/
+/** 2.0 - Global Element Styles **/
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -87,7 +77,7 @@ body::before {
   background-color: var(--bg-main);
 }
 main {
-  flex: 1;
+  /* flex: 1; */
   width: 100%;
   height: auto;
   margin: 0;
@@ -99,14 +89,22 @@ section {
   min-height: 100vh;
   margin: 0;
   padding: 0 var(--space-s);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 h2 {
   font-size: var(--font-size-l);
   padding: 0;
   margin: 0;
+}
+h3 {
+  /* color: var(--font-light); */
+  text-shadow: 0 0 5px var(--font-dark);
+  font-size: var(--font-size-l);
+}
+p {
+  font-size: var(--font-size-m)
 }
 a {
   text-decoration: none;
@@ -114,9 +112,7 @@ a {
   font-size: var(--font-size-m);
 }
 
-/* ===========================================================
-   3.0 - Global Container Styles 
-   ===========================================================*/
+/** 3.0 - Global Container Styles **/
 
 .section-container {
   width: 100%;
@@ -127,19 +123,17 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  gap: var(--flex-gap);
+  gap: var(--flex-gap-s);
   width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
 }
 
-/* ===========================================================
-   4.0 - Global Image Styles 
-   ===========================================================*/
+/** 4.0 - Global Image Styles **/
 
 .heading-img {
   width: 100%;
   height: auto;
-  padding: 0;
+  padding: 0 0 var(--space-s) 0;
 }

@@ -4,31 +4,140 @@
 * Author: Richard Pinegar | Rich Pin Software
 * Date: February 2026
 * Site Info: Digging for Shovels Official Band Website
-* Content: CSS Layout Styles - Mobile First
+* Content: CSS Page Styles - Mobile First
 *
-** TABLE OF CONTENTS:
-*** 5.0 - Section Styles
 */
 
-/* =============================================================
-   5.0 - Section Styles 
-   =============================================================*/
+/** 7.0 - Page Styles **/
 
-#home {
-  padding: var(--header-height) var(--space-s) 0 var(--space-s);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #about-us, #contact-us {
   background-color: var(--bg-light);
 }
 #about-us, #meet-the-band, #contact-us {
   min-height: calc(100vh - var(--header-height));
+  padding: var(--space-l) var(--space-s) 0 var(--space-s);
 }
 
-@media (min-width: 768px) {
-  .section-container {
-    width: 80%;
+  /**** 7.1 - Home Page ****/
+
+  .social-link {
+    text-decoration: none;
+    margin: 0;
   }
-}
+  .social-container {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-s);
+    margin: 0;
+    border-radius: var(--border-radius);
+    background-color: rgba(var(--light-rgb), 0.9);
+  }
+  .social-container:hover { /* TODO: move to js for mobile */
+    background-color: var(--bg-light);
+
+    .social-icon, .social-caption {
+    transform: scale(1.1);
+    }
+  }
+  .social-caption {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-m);
+    color: var(--bg-dark);
+  }
+  #home {
+    padding: calc(var(--header-height) + var(--space-l)) var(--space-s) 0 var(--space-s);
+  }
+  #instagram {
+    color: rgb(208, 55, 208);
+  }
+  #youtube {
+    color: rgb(255, 0, 0);
+  }
+  #bandcamp {
+    color: rgb(18, 152, 241);
+  }
+  #soundcloud {
+    color: rgb(255, 140, 0);
+  }
+  #venmo {
+    color: rgb(14, 167, 73);
+  }
+
+  /**** 7.2 - About Us Page ****/
+
+  .video {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: var(--space-m) 0 0 0;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-dark);
+  }
+  .video-player {
+    width: 100%;
+    height: var(--img-container-height);
+    object-fit: contain;
+  }
+  .video-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 var(--space-xs) 0;
+    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
+    color: var(--font-light);
+  }
+  .mute-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    background: rgba(var(--dark-rgb), 0.6);
+    color: var(--font-light);
+    border: 1px solid var(--bg-light);
+    padding: var(--space-xs);
+    cursor: pointer;
+  }
+  #text-highlight {
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+  }
+
+  /**** 7.3 - Meet the Band Page ****/
+
+  .band-member {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-dark);
+  }
+  .band-member img {
+    width: 100%;
+    max-height: var(--img-container-height);
+    object-fit: contain;
+  }
+  .band-member-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: var(--space-xs);
+    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.95));
+    color: var(--font-light);
+  }
+  #meet-the-band h2 {
+    padding: 0 0 var(--space-xs) 0;
+    letter-spacing: 0.1rem;
+    text-shadow: -1px 0 2px rgba(var(--dark-rgb), 0.8);
+    color: var(--font-light);
+  }
+
+  /**** 7.4 - Contact Us Page ****/
+
+  /* ==========================
+      No individual styles 
+     ========================== */
