@@ -10,12 +10,24 @@
 
 /** 7.0 - Page Styles **/
 
-#about-us, #contact-us {
+#home h2, #meet-the-band h2, #contact-us h2 {
+  margin: 0 0 var(--space-xs) 0;
+}
+#home {
+  background-color: var(--bg-primary);
+}
+#about-us {
+  background-color: var(--bg-secondary);
+}
+#meet-the-band {
+  background-color: rgba(var(--secondary-alt-rgb), 0.5);
+}
+#contact-us {
   background-color: var(--bg-light);
 }
 #about-us, #meet-the-band, #contact-us {
   min-height: calc(100vh - var(--header-height));
-  padding: var(--space-l) 0 0 0;
+  padding: var(--space-s) 0 0 0;
 }
 
   /**** 7.1 - Home Page ****/
@@ -39,12 +51,15 @@
     transform: scale(1.1);
     }
   }
+  .social-container div:first-child {
+    width: 2.5rem;
+  }
   .social-caption {
     font-weight: var(--font-weight-bold);
     color: var(--bg-dark);
   }
   #home {
-    padding: calc(var(--header-height) + var(--space-l)) 0 0 0;
+    padding: calc(var(--header-height) + var(--space-s)) 0 0 0;
   }
   #instagram {
     color: rgb(208, 55, 208);
@@ -70,72 +85,79 @@
     overflow: hidden;
     width: 100%;
     height: auto;
-    margin: var(--space-m) 0 0 0;
+    margin: var(--space-xs) 0 0 0;
     border-radius: var(--border-radius);
     background-color: var(--bg-dark);
   }
   .video-player {
     width: 100%;
-    height: var(--img-container-height);
+    height: 350px;
     object-fit: contain;
+    object-position:50%;
   }
   .video-caption {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 0 var(--space-s) var(--space-xs) var(--space-s);
     text-align: center;
-    padding: 0 0 var(--space-xs) 0;
-    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
+    font-weight: var(--font-weight-bold);
     color: var(--font-light);
+    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
   }
   .mute-toggle {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     z-index: 10;
     background: rgba(var(--dark-rgb), 0.6);
     color: var(--font-light);
     border: 1px solid var(--bg-light);
+    border-radius: var(--border-radius);
     padding: var(--space-xs);
     cursor: pointer;
   }
-  #text-highlight {
+  #about-us p span {
     font-weight: var(--font-weight-bold);
-    color: var(--primary-color);
+  }
+  #text-highlight {
+    color: var(--font-secondary);
   }
 
   /**** 7.3 - Meet the Band Page ****/
 
   .band-member {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--flex-gap-s);
     overflow: hidden;
     border-radius: var(--border-radius);
     width: 100%;
     height: auto;
-    background-color: var(--bg-dark);
+    margin: 0 0 var(--space-s) 0;
+    padding: var(--space-xs);
+    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.95));
   }
   .band-member img {
-    width: 100%;
-    max-height: var(--img-container-height);
+    width: 100px;
     object-fit: contain;
   }
   .band-member-caption {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: var(--space-xs);
-    background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.95));
     color: var(--font-light);
   }
-  #meet-the-band h2 {
-    padding: 0 0 var(--space-xs) 0;
+  .band-member-caption p {
     letter-spacing: 0.1rem;
-    text-shadow: -1px 0 2px rgba(var(--dark-rgb), 0.8);
-    color: var(--font-light);
+    font-weight: var(--font-weight-bold);
+    color: var(--font-secondary-alt);
   }
 
   /**** 7.4 - Contact Us Page ****/
 
-  /* ==========================
-      No individual styles 
-     ========================== */
+  .card-img {
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(var(--dark-rgb), 0.6);
+    box-shadow: 1px -1px 1px 1px rgba(var(--dark-rgb), 0.6);
+  }

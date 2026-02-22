@@ -13,10 +13,16 @@
 :root {
   /**** 1.1 - Colors ****/
   --primary-rgb: 2, 195, 217;
+  --secondary-rgb: 205, 245, 255;
+  --secondary-alt-rgb: 100, 233, 238;
   --light-rgb: 255, 255, 255;
   --dark-rgb: 0, 0, 0;
   --primary-color: rgb(2, 195, 217);
-  --bg-main: var(--primary-color);
+  --secondary-color: rgb(151, 200, 235);
+  --secondary-alt-color: rgb(100, 233, 238);
+  --bg-primary: var(--primary-color);
+  --bg-secondary: var(--secondary-color);
+  --bg-secondary-alt: var(--secondary-alt-color);
   --bg-low: rgba(var(--primary-rgb), 0.3);
   --bg-light: rgb(255, 255, 255);
   --bg-dark: rgb(0, 0, 0);
@@ -30,8 +36,11 @@
   --font-dark: var(--bg-dark);
   --font-light: var(--bg-light);
   --font-primary: var(--primary-color);
+  --font-secondary: var(--secondary-color);
+  --font-secondary-alt: var(--secondary-alt-color);
 
   /**** 1.3 - Margin/Padding ****/
+  --space-xl: 4.0rem;
   --space-l: 2.0rem;
   --space-m: 1.5rem;
   --space-s: 1.0rem;
@@ -39,7 +48,7 @@
 
   /**** 1.4 - Width/Height ****/
   --site-content-width: 100%;
-  --header-height: 110px;
+  --header-height: 80px;
   --img-container-height: 275px;
   --max-width-section: 1200px;
 
@@ -76,7 +85,6 @@ body::before {
   opacity: 0.5;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-main);
 }
 main {
   width: 100%;
@@ -90,7 +98,7 @@ section {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
+  background: linear-gradient(transparent, rgba(60, 60, 60, 0.8));
 }
 h2 {
   font-size: var(--font-size-m);
@@ -98,8 +106,8 @@ h2 {
   margin: 0;
 }
 h3 {
+  letter-spacing: 0.065rem;
   text-shadow: 0 0 5px var(--font-dark);
-  font-size: var(--font-size-m);
 }
 p {
   font-size: var(--font-size-s)
@@ -131,7 +139,7 @@ a {
 /** 4.0 - Global Image Styles **/
 
 .heading-img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  padding: 0 0 var(--space-s) 0;
+  padding: 0 0 var(--space-xs) 0;
 }
