@@ -28,10 +28,10 @@
     .heading-img {
       width: 75%;
     }
-    #nav-links-container a {
+    #nav-links a {
       justify-content: center;
     }
-    #nav-links-container.open {
+    #nav-links.open {
       width: 35%;
     }
     .section-container {
@@ -43,17 +43,17 @@
     .video-player {
       height: 450px;
     }
-}
+  }
 
 @media only screen and /* Small Tablet Landscape */
   (min-width: 1024px) and (min-height: 768px) {
-    #home h2, #meet-the-band h2, #contact-us h2 {
+    #our-links h2, #meet-the-band h2, #contact-us h2 {
       margin: 0 0 var(--space-s) 0;
     }
     h3 {
       font-size: 1.25rem;
     }
-    #nav-links-container a {
+    #nav-links a {
       font-size: 1.25rem;
     }
     .section-container {
@@ -72,7 +72,7 @@
     footer a {
       font-size: 1.25rem;
     }
-}
+  }
 
 @media only screen and /* Medium Tablet Portrait */
   (min-width: 820px) and (min-height: 1180px) {
@@ -110,7 +110,7 @@
     :root {
       --header-height: 125px;
     }
-    #nav-links-container a, footer a {
+    #nav-links a, footer a {
       font-size: 1.5rem;
     }
     .heading-img {
@@ -121,24 +121,5 @@
     }
     .video-player {
       height: 700px;
-    }
-  }
-
-  @media only screen and /* Large Tablet Landscape */
-  (min-width: 1366px) and (min-height: 1024px) {
-    :root {
-      --header-height: 125px;
-    }
-    #nav-links-container a, footer a {
-      font-size: 1.5rem;
-    }
-    .social-container {
-      padding: var(--space-s);
-    }
-    .video-player {
-      height: 575px;
-    }
-    .band-member img {
-      width: 150px;
     }
   }

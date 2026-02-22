@@ -10,17 +10,17 @@
 
 /** 7.0 - Page Styles **/
 
-#home h2, #meet-the-band h2, #contact-us h2 {
+#our-links h2, #meet-the-band h2, #contact-us h2 {
   margin: 0 0 var(--space-xs) 0;
 }
-#home {
+#our-links {
   background-color: var(--bg-primary);
 }
 #about-us {
   background-color: var(--bg-secondary);
 }
 #meet-the-band {
-  background-color: rgba(var(--secondary-alt-rgb), 0.5);
+  background-color: var(--bg-secondary-alt);
 }
 #contact-us {
   background-color: var(--bg-light);
@@ -58,7 +58,7 @@
     font-weight: var(--font-weight-bold);
     color: var(--bg-dark);
   }
-  #home {
+  #our-links {
     padding: calc(var(--header-height) + var(--space-s)) 0 0 0;
   }
   #instagram {

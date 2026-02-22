@@ -20,10 +20,11 @@
   --primary-color: rgb(2, 195, 217);
   --secondary-color: rgb(151, 200, 235);
   --secondary-alt-color: rgb(100, 233, 238);
+  --shadow-color: rgba(60, 60, 60, 0.8);
   --bg-primary: var(--primary-color);
   --bg-secondary: var(--secondary-color);
-  --bg-secondary-alt: var(--secondary-alt-color);
-  --bg-low: rgba(var(--primary-rgb), 0.3);
+  --bg-secondary-alt: rgba(var(--secondary-alt-rgb), 0.5);
+  --bg-low: var(--shadow-color);
   --bg-light: rgb(255, 255, 255);
   --bg-dark: rgb(0, 0, 0);
 
@@ -32,6 +33,7 @@
   --font-size-s: 1.0rem;
   --font-size-m: 1.5rem;
   --font-size-l: 2.0rem;
+  --font-size-xl: 2.5rem;
   --font-weight-bold: 900;
   --font-dark: var(--bg-dark);
   --font-light: var(--bg-light);
@@ -98,7 +100,7 @@ section {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(transparent, rgba(60, 60, 60, 0.8));
+  background: linear-gradient(transparent, var(--bg-low));
 }
 h2 {
   font-size: var(--font-size-m);
@@ -138,6 +140,9 @@ a {
 
 /** 4.0 - Global Image Styles **/
 
+.nav-img {
+  display: none;
+}
 .heading-img {
   width: 60%;
   height: auto;
