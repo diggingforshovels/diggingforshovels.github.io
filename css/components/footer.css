@@ -13,7 +13,6 @@
 footer {
   margin: 0;
   padding: var(--space-l) 0 var(--space-s) 0;
-  padding-bottom: max(var(--space-s), env(safe-area-inset-bottom));
   color: var(--bg-light);
   background-color: var(--bg-dark);
   flex-shrink: 0;

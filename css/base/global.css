@@ -105,7 +105,6 @@ section {
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: env(safe-area-inset-top);
   background: linear-gradient(transparent, var(--bg-low));
 }
 h2 {
