@@ -58,6 +58,9 @@
     .social-caption {
       font-size: var(--font-size-s);
     }
+    .video-player {
+      height: 700px;
+    }
     .video-caption {
       padding: var(--space-l);
     }

@@ -95,11 +95,12 @@
   .video-player {
     display: block;
     width: 100%;
-    min-height: 280px;
+    height: 350px;
     max-height: 45dvh;
     object-fit: contain;
     object-position: 50%;
     aspect-ratio: 16 / 9;
+    flex-shrink: 1;
   }
   .video-caption {
     position: absolute;
