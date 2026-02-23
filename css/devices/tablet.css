@@ -55,7 +55,7 @@
       padding: var(--space-xs);
     }
     .video-player {
-      height: 425px;
+      height: 400px;
     }
     .band-member img {
       width: 125px;
@@ -71,7 +71,7 @@
       margin: 0 0 var(--space-xs) 0;
     }
     .video-player {
-      height: 625px;
+      height: 600px;
     }
     .band-member {
       gap: var(--space-s);
