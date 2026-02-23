@@ -16,7 +16,7 @@
 #our-links {
   background-color: var(--bg-primary);
 }
-#about-us {
+#music {
   background-color: var(--bg-secondary);
 }
 #meet-the-band {
@@ -25,7 +25,7 @@
 #contact-us {
   background-color: var(--bg-light);
 }
-#about-us, #meet-the-band, #contact-us {
+#music, #meet-the-band, #contact-us {
   min-height: calc(100vh - var(--header-height));
   padding: var(--space-s) 0 0 0;
 }
@@ -42,6 +42,8 @@
     padding: var(--space-s);
     margin: 0;
     border-radius: var(--border-radius);
+    border: 1px solid rgba(var(--light-rgb), 0.6);
+    box-shadow: 1px -1px 1px 1px rgba(var(--shadow-rgb), 0.6);
     background-color: rgba(var(--light-rgb), 0.9);
   }
   .social-container:hover { /* TODO: move to js for mobile */
@@ -77,16 +79,17 @@
     color: rgb(14, 167, 73);
   }
 
-  /**** 7.2 - About Us Page ****/
+  /**** 7.2 - Music Page ****/
 
   .video {
     position: relative;
-    flex: 1;
     overflow: hidden;
     width: 100%;
     height: auto;
     margin: var(--space-xs) 0 0 0;
     border-radius: var(--border-radius);
+    border: 1px solid rgba(var(--dark-rgb), 0.6);
+    box-shadow: 1px -1px 1px 1px rgba(var(--shadow-rgb), 0.6);
     background-color: var(--bg-dark);
   }
   .video-player {
@@ -117,7 +120,17 @@
     padding: var(--space-xs);
     cursor: pointer;
   }
-  #about-us p span {
+  /* #about-text {
+    padding: var(--space-xs) var(--space-m);
+    text-shadow: 1px -1px 1px 1px var(--font-dark);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(var(--secondary-rgb), 0.6);
+    box-shadow: 1px -1px 1px 1px rgba(var(--shadow-rgb), 0.6);
+    background-color: rgba(var(--light-rgb), 0.6);
+  } */
+  #music p span {
     font-weight: var(--font-weight-bold);
   }
   #text-highlight {
@@ -133,6 +146,8 @@
     gap: var(--flex-gap-s);
     overflow: hidden;
     border-radius: var(--border-radius);
+    border: 1px solid rgba(var(--secondary-alt-rgb), 0.6);
+    box-shadow: 1px -1px 1px 1px rgba(var(--shadow-rgb), 0.6);
     width: 100%;
     height: auto;
     margin: 0 0 var(--space-s) 0;

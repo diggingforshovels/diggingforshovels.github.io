@@ -30,7 +30,7 @@ function toggleMenu() {
       case '#our-links':
         hl.style.color = bgPrimary;
         break;
-      case '#about-us':
+      case '#music':
         hl.style.color = bgSecondary;
         break;
       case '#meet-the-band':
@@ -56,7 +56,7 @@ navLinks.forEach(link => {
         link.style.color = bgPrimary;
         console.log(page);
         break;
-      case '#about-us':
+      case '#music':
         link.style.color = bgSecondary;
         break;
       case '#meet-the-band':

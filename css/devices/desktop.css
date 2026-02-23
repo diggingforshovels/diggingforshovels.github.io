@@ -24,19 +24,18 @@
     nav {
       padding: 0;
     }
-    h3 {
+    h2 {
       font-size: var(--font-size-l);
+    }
+    h3 {
+      font-size: var(--font-size-m);
     }
     p {
       font-size: var(--font-size-m);
     }
-    #our-links h2, #meet-the-band h2, #contact-us h2 {
-      margin: var(--space-l) 0;
-      font-size: var(--font-size-xl);
-    }
-    #about-us h2 {
-      margin: var(--space-m) 0;
-      font-size: var(--font-size-xl);
+    #our-links h2, #music h2, #meet-the-band h2, #contact-us h2 {
+      margin-top: var(--space-m);
+      font-size: var(--font-size-l);
     }
     nav, .section-container {
       width: 50%;
@@ -48,13 +47,13 @@
       display: block;
     }
     .section-container {
-      padding: var(--space-l) 0;
+      padding: var(--space-xs) 0 var(--space-s) 0;
     }
     .heading-img {
       display: none;
     }
     .social-container {
-      padding: var(--space-m);
+      padding: var(--space-s) 0;
     }
     .social-caption {
       font-size: var(--font-size-s);
