@@ -25,15 +25,6 @@
     h3 {
       font-size: 1.5rem;
     }
-    /* .heading-img {
-      width: 75%;
-    } */
-    /* #nav-links a {
-      justify-content: center;
-    } */
-    /* #nav-links.open {
-      width: 35%;
-    } */
     .section-container {
       padding: 0 0 var(--space-s) 0;
     }
@@ -113,9 +104,6 @@
     #nav-links a, footer a {
       font-size: 1.5rem;
     }
-    /* .heading-img {
-      width: 100%;
-    } */
     .social-container {
       padding: var(--space-m);
     }

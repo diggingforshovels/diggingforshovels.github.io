@@ -120,16 +120,6 @@
     padding: var(--space-xs);
     cursor: pointer;
   }
-  /* #about-text {
-    padding: var(--space-xs) var(--space-m);
-    text-shadow: 1px -1px 1px 1px var(--font-dark);
-    text-align: center;
-    font-weight: var(--font-weight-bold);
-    border-radius: var(--border-radius);
-    border: 1px solid rgba(var(--secondary-rgb), 0.6);
-    box-shadow: 1px -1px 1px 1px rgba(var(--shadow-rgb), 0.6);
-    background-color: rgba(var(--light-rgb), 0.6);
-  } */
   #music p span {
     font-weight: var(--font-weight-bold);
   }
