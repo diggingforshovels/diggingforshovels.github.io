@@ -10,8 +10,8 @@
 
 /** 7.0 - Page Styles **/
 
-#our-links h2, #meet-the-band h2, #contact-us h2 {
-  margin: 0 0 var(--space-xs) 0;
+#our-links h2, #meet-the-band h2, #contact-us h2, #music h2 {
+  padding-bottom: var(--space-xs);
 }
 #our-links {
   background-color: var(--bg-primary);
