@@ -32,7 +32,7 @@
       flex-direction: column;
     }
     .video-player {
-      height: 450px;
+      min-height: 450px;
     }
   }
 
@@ -55,7 +55,7 @@
       padding: var(--space-xs);
     }
     .video-player {
-      height: 425px;
+      min-height: 400px;
     }
     .band-member img {
       width: 125px;
@@ -71,7 +71,7 @@
       margin: 0 0 var(--space-xs) 0;
     }
     .video-player {
-      height: 625px;
+      min-height: 600px;
     }
     .band-member {
       gap: var(--space-s);
@@ -108,6 +108,6 @@
       padding: var(--space-m);
     }
     .video-player {
-      height: 700px;
+      min-height: 700px;
     }
   }
