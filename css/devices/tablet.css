@@ -1,0 +1,113 @@
+/*
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Responsive Styles for Tablet
+*
+*/
+
+/** 9.0 - Tablet Styles **/
+
+@media only screen and /* Small Tablet Portrait */
+  (min-width: 768px) and (min-height: 1024px) {
+    :root {
+      --site-content-width: 90%;
+      --font-size-s: 1.25rem;
+      --font-size-m: 1.75rem;
+      --font-size-l: 2.0rem;
+    }
+    section, header, footer {
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    .section-container {
+      padding: 0 0 var(--space-s) 0;
+    }
+    .social-container {
+      flex-direction: column;
+    }
+    .video-player {
+      height: 450px;
+    }
+  }
+
+@media only screen and /* Small Tablet Landscape */
+  (min-width: 1024px) and (min-height: 768px) {
+    #our-links h2, #meet-the-band h2, #contact-us h2 {
+      margin: 0 0 var(--space-s) 0;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    #nav-links a {
+      font-size: 1.25rem;
+    }
+    .section-container {
+      padding: 0 var(--space-m) var(--space-s) var(--space-m);
+    }
+    .social-container {
+      flex-direction: column;
+      padding: var(--space-xs);
+    }
+    .video-player {
+      height: 425px;
+    }
+    .band-member img {
+      width: 125px;
+    }
+    footer a {
+      font-size: 1.25rem;
+    }
+  }
+
+@media only screen and /* Medium Tablet Portrait */
+  (min-width: 820px) and (min-height: 1180px) {
+    .home-link {
+      margin: 0 0 var(--space-xs) 0;
+    }
+    .video-player {
+      height: 625px;
+    }
+    .band-member {
+      gap: var(--space-s);
+    }
+    .band-member img {
+      width: 175px;
+    }
+  }
+
+  @media only screen and /* Medium Tablet Landscape */
+  (min-width: 1180px) and (min-height: 820px) {
+    :root {
+      --site-content-width: 75%;
+    }
+    .heading-img {
+      width: 45%;
+      height: auto;
+      padding: 0 0 var(--space-xs) 0;
+    }
+    .home-link {
+      margin: 0 0 var(--space-xs) 0;
+    }
+  }
+
+  @media only screen and /* Large Tablet Portrait */
+  (min-width: 1024px) and (min-height: 1366px) {
+    :root {
+      --header-height: 125px;
+    }
+    #nav-links a, footer a {
+      font-size: 1.5rem;
+    }
+    .social-container {
+      padding: var(--space-m);
+    }
+    .video-player {
+      height: 700px;
+    }
+  }

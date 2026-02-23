@@ -1,0 +1,84 @@
+/*
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Responsive Styles for Desktop
+*
+*/
+
+/** 10.0 - Desktop Styles **/
+
+@media only screen and
+  (min-width: 1280px) and (min-height: 800px) {
+    :root {
+      --header-height: 175px;
+    }
+    header {
+      padding: var(--space-m) 0;
+    }
+    #nav-links a, footer .section-container a {
+      font-size: var(--font-size-m);
+    }
+    nav {
+      padding: 0;
+    }
+    h2 {
+      font-size: var(--font-size-l);
+    }
+    h3 {
+      font-size: var(--font-size-m);
+    }
+    p {
+      font-size: var(--font-size-m);
+    }
+    #our-links h2, #music h2, #meet-the-band h2, #contact-us h2 {
+      margin-top: var(--space-m);
+      font-size: var(--font-size-l);
+    }
+    nav, .section-container {
+      width: 50%;
+    }
+    nav .container a {
+      font-size: var(--font-size-l);
+    }
+    .nav-img {
+      display: block;
+    }
+    .section-container {
+      padding: var(--space-xs) 0 var(--space-s) 0;
+    }
+    .heading-img {
+      display: none;
+    }
+    .social-container {
+      padding: var(--space-s) 0;
+    }
+    .social-caption {
+      font-size: var(--font-size-s);
+    }
+    .video-caption {
+      padding: var(--space-l);
+    }
+  }
+
+@media only screen and /* Medium Laptop */
+  (min-width: 1280px) and (min-height: 1024px) {
+    /* Placeholder */
+  }
+
+@media only screen and /* Large Laptop */
+  (min-width: 1600px) and (min-height: 900px) {
+    /* Placeholder */
+  }
+
+@media only screen and /* Small Monitor */
+  (min-width: 1920px) and (min-height: 1080px) {
+    /* Placeholder */
+  }
+
+@media only screen and /* Medium Monitor */
+  (min-width: 1366px) and (min-height: 768px) {
+    /* Placeholder */
+  }

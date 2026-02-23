@@ -1,0 +1,154 @@
+/*
+* Copyright (c) 2026. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: February 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Global CSS Stylesheet - Mobile First
+*
+*/
+
+/** 1.0 - Global Variables **/
+
+:root {
+  /**** 1.1 - Colors ****/
+  --primary-rgb: 2, 195, 217;
+  --secondary-rgb: 205, 245, 255;
+  --secondary-alt-rgb: 100, 233, 238;
+  --shadow-rgb: 60, 60, 60;
+  --light-rgb: 255, 255, 255;
+  --dark-rgb: 0, 0, 0;
+  --primary-color: rgb(2, 195, 217);
+  --secondary-color: rgb(151, 200, 235);
+  --secondary-alt-color: rgb(100, 233, 238);
+  --shadow-color: rgba(60, 60, 60, 0.8);
+  --bg-primary: var(--primary-color);
+  --bg-secondary: var(--secondary-color);
+  --bg-secondary-alt: rgba(var(--secondary-alt-rgb), 0.5);
+  --bg-low: var(--shadow-color);
+  --bg-light: rgb(255, 255, 255);
+  --bg-dark: rgb(0, 0, 0);
+
+  /**** 1.2 - Fonts ****/
+  --font-family: "Lato", sans-serif;
+  --font-size-s: 1.0rem;
+  --font-size-m: 1.5rem;
+  --font-size-l: 2.0rem;
+  --font-size-xl: 2.5rem;
+  --font-weight-bold: 900;
+  --font-dark: var(--bg-dark);
+  --font-light: var(--bg-light);
+  --font-primary: var(--primary-color);
+  --font-secondary: var(--secondary-color);
+  --font-secondary-alt: var(--secondary-alt-color);
+
+  /**** 1.3 - Margin/Padding ****/
+  --space-xl: 4.0rem;
+  --space-l: 2.0rem;
+  --space-m: 1.5rem;
+  --space-s: 1.0rem;
+  --space-xs: 0.5rem;
+
+  /**** 1.4 - Width/Height ****/
+  --site-content-width: 100%;
+  --header-height: 80px;
+  --img-container-height: 275px;
+  --max-width-section: 1200px;
+
+  /**** 1.5 - Other ****/
+  --border-radius: 10px;
+  --flex-gap-l: 1.5rem;
+  --flex-gap-m: 1.0rem;
+  --flex-gap-s: 0.5rem;
+}
+
+/** 2.0 - Global Element Styles **/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+section {
+  scroll-margin-top: var(--header-height);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(transparent, var(--bg-low));
+}
+h2 {
+  font-size: var(--font-size-m);
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  letter-spacing: 0.065rem;
+  text-shadow: 0 0 5px var(--font-dark);
+}
+p {
+  font-size: var(--font-size-s)
+}
+a {
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-s);
+}
+
+/** 3.0 - Global Container Styles **/
+
+.section-container {
+  width: var(--site-content-width);
+  height: auto;
+  margin: 0;
+  padding: 0 var(--space-m) var(--space-m) var(--space-m);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap-s);
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/** 4.0 - Global Image Styles **/
+
+.nav-img {
+  display: none;
+}
+.heading-img {
+  width: 60%;
+  height: auto;
+  padding: 0 0 var(--space-xs) 0;
+}
+.card-img {
+  width: 75%;
+}
