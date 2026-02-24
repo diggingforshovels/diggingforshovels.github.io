@@ -12,9 +12,10 @@
 
 footer {
   margin: 0;
-  padding: var(--space-l) 0;
+  padding: var(--space-l) 0 var(--space-s) 0;
   color: var(--bg-light);
   background-color: var(--bg-dark);
+  flex-shrink: 0;
 }
 
   /*** 6.1 - Footer Links ***/
@@ -33,5 +34,5 @@ footer {
   }
   #footer-links {
     flex-direction: column;
-    margin-bottom: var(--space-l);
+    padding-bottom: var(--space-l);
   }
