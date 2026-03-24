@@ -105,7 +105,7 @@
     padding: 0 var(--space-s) var(--space-xs) var(--space-s);
     text-align: center;
     font-weight: var(--font-weight-bold);
-    color: var(--font-light);
+    color: var(--color-font-light);
     background: linear-gradient(transparent, rgba(var(--dark-rgb), 0.8));
   }
   .mute-toggle {
@@ -114,7 +114,7 @@
     right: 10px;
     z-index: 10;
     background: rgba(var(--dark-rgb), 0.6);
-    color: var(--font-light);
+    color: var(--color-font-light);
     border: 1px solid var(--bg-light);
     border-radius: var(--border-radius);
     padding: var(--space-xs);
@@ -124,7 +124,7 @@
     font-weight: var(--font-weight-bold);
   }
   #text-highlight {
-    color: var(--font-secondary);
+    color: var(--color-font-secondary);
   }
 
   /**** 7.3 - Meet the Band Page ****/
@@ -151,12 +151,12 @@
   .band-member-caption {
     width: 100%;
     padding: var(--space-xs);
-    color: var(--font-light);
+    color: var(--color-font-light);
   }
   .band-member-caption p {
     letter-spacing: 0.1rem;
     font-weight: var(--font-weight-bold);
-    color: var(--font-secondary-alt);
+    color: var(--color-font-alt);
   }
 
   /**** 7.4 - Contact Us Page ****/

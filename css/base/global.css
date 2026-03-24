@@ -36,11 +36,11 @@
   --font-size-l: 2.0rem;
   --font-size-xl: 2.5rem;
   --font-weight-bold: 900;
-  --font-dark: var(--bg-dark);
-  --font-light: var(--bg-light);
-  --font-primary: var(--primary-color);
-  --font-secondary: var(--secondary-color);
-  --font-secondary-alt: var(--secondary-alt-color);
+  --color-font-dark: var(--bg-dark);
+  --color-font-light: var(--bg-light);
+  --color-font-primary: var(--primary-color);
+  --color-font-secondary: var(--secondary-color);
+  --color-font-alt: var(--secondary-alt-color);
 
   /**** 1.3 - Margin/Padding ****/
   --space-xl: 4.0rem;
@@ -110,7 +110,7 @@ h2 {
 }
 h3 {
   letter-spacing: 0.065rem;
-  text-shadow: 0 0 5px var(--font-dark);
+  text-shadow: 0 0 5px var(--color-font-dark);
 }
 p {
   font-size: var(--font-size-s)
