@@ -54,7 +54,10 @@ header {
 
 main {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(calc(100vh - var(--header-height)), auto));
   justify-items: center;
+  gap: 3.0rem;
   width: 100%;
 
   section {
@@ -64,10 +67,20 @@ main {
     gap: 1.0rem;
   }
 
+  h1 {
+    align-self: center;
+  }
+
+  .page-link {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2.0rem;
+    padding: 0 2.0rem;
+    background-color: pink; /* Placeholder for visibility */
+  }
+
   .page-link__item {
-    display: inline;
-    vertical-align: middle;
-    margin-right: 2.0rem;
     height: clamp(3.0rem, 1vw + 3.0rem, 5.0rem);
   }
 
