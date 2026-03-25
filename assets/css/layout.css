@@ -63,4 +63,31 @@ main {
     grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
     gap: 1.0rem;
   }
+
+  .page-link__item {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 2.0rem;
+    height: clamp(3.0rem, 1vw + 3.0rem, 5.0rem);
+  }
+
+  .page-link__item.instagram {
+    fill: rgb(208, 55, 208);
+  }
+
+  .page-link__item.youtube {
+    fill: rgb(255, 0, 0);
+  }
+
+  .page-link__item.venmo {
+    fill: rgb(18, 152, 241);
+  }
+
+  .page-link__item.bandcamp {
+    fill:rgb(151, 199, 232);
+  }
+
+  .page-link__item.soundcloud {
+    fill: rgb(255, 140, 0);
+  }
 }
