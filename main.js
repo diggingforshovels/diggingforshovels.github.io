@@ -13,8 +13,8 @@ const bgSecondaryAlt = cssStyles.getPropertyValue("--bg-secondary-alt");
 const bgLow = cssStyles.getPropertyValue("--bg-low");
 const bgLight = cssStyles.getPropertyValue("--bg-light");
 const navLinks = document.querySelectorAll('#nav-links a');
-const video = document.querySelectorAll('.video');
-const videoPlayer = document.querySelectorAll('.video-player');
+const video = document.querySelectorAll('.page-video');
+const videoPlayer = document.querySelectorAll('.player');
 
 var nl = document.getElementById("nav-links");
 var hl = document.getElementById("hamburger-link");
@@ -33,7 +33,7 @@ function toggleMenu() {
       case '#music':
         hl.style.color = bgSecondary;
         break;
-      case '#meet-the-band':
+      case '#the-band':
         hl.style.color = bgSecondaryAlt;
         break;
       case '#contact-us':
@@ -59,7 +59,7 @@ navLinks.forEach(link => {
       case '#music':
         link.style.color = bgSecondary;
         break;
-      case '#meet-the-band':
+      case '#the-band':
         link.style.color = bgSecondaryAlt;
         break;
       case '#contact-us':
@@ -85,7 +85,7 @@ document.querySelectorAll('#nav-links a').forEach(link => {
 // Video mute by default on site load
 video.forEach((container) => {
   const btn = container.querySelector('.mute-toggle');
-  const video = container.querySelector('.video-player');
+  const video = container.querySelector('.player');
 
   btn.addEventListener('click', () => {
     if (video.muted) {

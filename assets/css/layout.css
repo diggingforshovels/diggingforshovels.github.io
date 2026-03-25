@@ -16,12 +16,27 @@ body {
 }
 
 .wrapper {
+  display: grid;
+}
+
+header .wrapper,
+footer .wrapper,
+section.wrapper {
   max-width: 1400px;
   padding: 0 1.0rem;
   width: 100%;
 }
 
+section.wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.0rem;
+  padding: 3.0rem 1.0rem;
+}
+
 header {
+  position: sticky;
+  top: 0;
   display: grid;
   justify-items: center;
   background-color: var(--color-dark);
@@ -29,7 +44,6 @@ header {
   height: var(--header-height);
 
   .wrapper {
-    display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: 3.0rem;
@@ -55,24 +69,26 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(calc(100vh - var(--header-height)), auto));
+  grid-template-rows: repeat(auto-fit, 1fr);
   justify-items: center;
-  gap: 3.0rem;
   width: 100%;
+}
 
-  section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
-    gap: 1.0rem;
-  }
+section {
+  scroll-margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
 
   h1 {
     align-self: center;
   }
+}
+
+.page-content.our-links.wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1.0rem;
 
   .page-link {
-    display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 2.0rem;
@@ -102,5 +118,73 @@ main {
 
   .page-link__item.soundcloud {
     fill: rgb(255, 140, 0);
+  }
+}
+
+.page-content.music.wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.0rem;
+
+  .page-video.wrapper {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    padding: 0.5rem;
+  }
+
+  .page-video__item.player {
+    grid-area: 1 / 1;
+  }
+
+  .page-video__item.mute-toggle {
+    grid-area: 1 / 1;
+    place-self: start end;
+    color: var(--color-light);
+    font-size: var(--font-size-m);
+    padding: 0.5rem;
+  }
+
+  .page-video__item.caption {
+    grid-area: 1 / 1;
+    place-self: end center;
+    background: linear-gradient(transparent, var(--color-shade));
+    width: 100%;
+  }
+}
+
+.page-content.the-band.wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1.0rem;
+
+  .band-member {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 3.0rem;
+    padding: 1.0rem;
+    background-color: aqua;
+  }
+
+  .band-member__item.image {
+    width: clamp(6.25rem, 4vw + 6.25rem, 15.0rem);
+  }
+}
+
+.wrapper.contact-us {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+footer {
+  background-color: var(--color-dark);
+  width: 100%;
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3.0rem;
+    background-color: pink;
   }
 }
