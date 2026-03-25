@@ -1,0 +1,66 @@
+/*
+* Copyright: (c)2026 Digging for Shovels
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Layout Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+.wrapper {
+  max-width: 1400px;
+  padding: 0 1.0rem;
+  width: 100%;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  background-color: var(--color-dark);
+  width: 100%;
+  height: var(--header-height);
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3.0rem;
+  }
+
+  .site-logo {
+    width: fit-content;
+  }
+
+  .site-logo__item, .nav-button__item {
+    height: calc(var(--header-height) / 2);
+  }
+
+  .nav-button__item path {
+    fill: var(--color-light);
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    gap: 1.0rem;
+  }
+}
