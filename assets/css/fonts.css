@@ -8,6 +8,12 @@
 * Version: 3.0
 */
 
+/************************************
+
+      Font Definitions & Styles
+
+*************************************/
+
 /* lato-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -30,7 +36,9 @@ html {
 }
 
 body { 
-  font-family: var(--font-family); 
+  font-family: var(--font-family);
+  font-weight: var(--font-regular);
+  font-style: normal;
 }
 
 h1 { 

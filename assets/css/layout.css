@@ -8,6 +8,11 @@
 * Version: 3.0
 */
 
+/************************************
+
+            Site Layout
+
+*************************************/
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -15,27 +20,14 @@ body {
   justify-items: center;
 }
 
-.wrapper {
-  display: grid;
+header, footer {
   width: var(--full-width);
 }
 
-header .wrapper,
-footer .wrapper,
-section.wrapper {
+.wrapper {
+  display: grid;
   max-width: var(--site-max-width);
-}
-
-header .wrapper,
-section.wrapper {
-  padding: 0 var(--space-s);
-}
-
-section.wrapper {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: var(--space-s);
-  padding: var(--space-l) var(--space-s);
+  width: var(--full-width);
 }
 
 header {
@@ -43,13 +35,13 @@ header {
   top: 0;
   display: grid;
   justify-items: center;
-  width: var(--full-width);
   height: var(--header-height);
 
   .wrapper {
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: var(--space-l);
+    padding: 0 var(--space-s);
   }
 
   .site-logo {
@@ -62,6 +54,30 @@ header {
 
   .nav-links {
     display: none;
+  }
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  padding: var(--space-l) var(--space-s);
+
+  .wrapper {
+    justify-items: center;
+    gap: var(--space-l);
+  }
+
+  .nav-links.wrapper {
+    gap: var(--space-m);
+  }
+
+  .social-links.wrapper {
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  .social-link__item {
+    height: clamp(2.0rem, 3vw + 1.0rem, 3.5rem);
+    vertical-align: middle;
   }
 }
 
@@ -80,6 +96,13 @@ section {
   h1 {
     align-self: center;
   }
+}
+
+section.wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-s);
+  padding: var(--space-l) var(--space-s);
 }
 
 .page-content.our-links.wrapper {
@@ -146,29 +169,4 @@ section {
 .wrapper.contact-us {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-}
-
-footer {
-  display: grid;
-  justify-items: center;
-  padding: var(--space-l) var(--space-s);
-  width: var(--full-width);
-
-  .wrapper {
-    gap: var(--space-l);
-  }
-
-  .nav-links.wrapper {
-    gap: var(--space-s);
-  }
-
-  .social-links.wrapper {
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
-  }
-
-  .social-link__item {
-    height: clamp(2.0rem, 3vw + 1.0rem, 3.5rem);
-    vertical-align: middle;
-  }
 }

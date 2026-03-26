@@ -14,13 +14,13 @@
               Site Colors
 
 *************************************/
+  --color-dark: rgb(0, 0, 0);
+  --color-light: rgb(255, 255, 255);
+  --color-shade: rgba(60, 60, 60, 0.8);
   --color-primary: rgb(2, 195, 217);
   --color-secondary: rgb(151, 200, 235);
   --color-alt: rgb(100, 233, 238);
   --color-alt-light: rgba(100, 233, 238, 0.5);
-  --color-light: rgb(255, 255, 255);
-  --color-shade: rgba(60, 60, 60, 0.8);
-  --color-dark: rgb(0, 0, 0);
 /************************************
 
               Site Dimensions

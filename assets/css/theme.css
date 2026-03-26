@@ -8,10 +8,27 @@
 * Version: 3.0
 */
 
+/************************************
+
+          Site Theme Styles
+
+*************************************/
 header {
   background-color: var(--color-dark);
 
   .nav-button__item path {
+    fill: var(--color-light);
+  }
+}
+
+footer {
+  background-color: var(--color-dark);
+
+  .nav-links {
+    color: var(--color-light);
+  }
+
+  .social-link__item {
     fill: var(--color-light);
   }
 }
@@ -61,22 +78,5 @@ header {
 .the-band {
   .band-member {
     background-color: aqua;
-  }
-}
-
-footer {
-  background-color: var(--color-dark);
-  text-align: center;
-
-  .nav-links {
-    color: var(--color-light);
-  }
-
-  .social-link {
-    width: fit-content;
-  }
-
-  .social-link__item {
-    fill: var(--color-light);
   }
 }
