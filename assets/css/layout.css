@@ -123,13 +123,13 @@ section.wrapper {
 }
 
 .page-content.music.wrapper {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: max-content;
   gap: var(--space-s);
 
   .page-video.wrapper {
     align-items: center;
     justify-items: center;
-    padding: var(--space-xs);
   }
 
   .page-video__item.player {
@@ -140,11 +140,13 @@ section.wrapper {
     grid-area: 1 / 1;
     place-self: start end;
     padding: var(--space-xs);
+    margin: var(--space-xs) var(--space-xs) 0 0;
   }
 
   .page-video__item.caption {
     grid-area: 1 / 1;
     place-self: end center;
+    padding: var(--space-xs);
     width: var(--full-width);
   }
 }
