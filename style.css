@@ -8,21 +8,11 @@
 * Version: 3.0
 */
 
-/* 1.0 - Global Definitions */
+/************************************
 
-:root {
-  --color-primary: rgb(2, 195, 217);
-  --color-secondary: rgb(151, 200, 235);
-  --color-alt: rgb(100, 233, 238);
-  --color-alt-light: rgba(100, 233, 238, 0.5);
-  --color-light: rgb(255, 255, 255);
-  --color-shade: rgba(60, 60, 60, 0.8);
-  --color-dark: rgb(0, 0, 0);
-  --header-height: clamp(5.0rem, 10vw + 1.0rem, 10.0rem);
-}
+      CSS Reset & Default Styles
 
-/* 2.0 - CSS Reset */
-
+*************************************/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -41,8 +31,15 @@ html, body, main, section, button {
 }
 
 img, picture, video, svg {
-  display: block;
   max-width: 100%;
+}
+
+img, picture, video {
+  display: block;
+}
+
+svg {
+  display: inline;
 }
 
 button {
@@ -52,6 +49,7 @@ button {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {

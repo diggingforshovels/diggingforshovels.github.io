@@ -25,21 +25,6 @@
   src: url('/assets/fonts/lato-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-:root {
-  --font-family: "Lato", sans-serif;
-  --font-regular: 400;
-  --font-bold: 900;
-  --font-size-xl: 2.5rem;
-  --font-size-l: 2.0rem;
-  --font-size-m: 1.5rem;
-  --font-size-s: 1.0rem;
-  --color-font-dark: rgb(0, 0, 0);
-  --color-font-light: rgb(255, 255, 255);
-  --color-font-primary: rgb(2, 195, 217);
-  --color-font-secondary: rgb(151, 200, 235);
-  --color-font-alt: rgb(100, 233, 238);
-}
-
 html { 
   font-size: 16px;
 }
@@ -62,4 +47,8 @@ p, a {
 
 a {
   font-weight: var(--font-bold);
+}
+
+.mute-toggle {
+  font-size: var(--font-size-m);
 }

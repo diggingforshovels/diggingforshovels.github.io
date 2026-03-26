@@ -1,0 +1,63 @@
+/*
+* Copyright: (c)2026 Digging for Shovels
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Global Variables for Digging for Shovels
+* Version: 3.0
+*/
+
+:root {
+/************************************
+
+              Site Colors
+
+*************************************/
+  --color-primary: rgb(2, 195, 217);
+  --color-secondary: rgb(151, 200, 235);
+  --color-alt: rgb(100, 233, 238);
+  --color-alt-light: rgba(100, 233, 238, 0.5);
+  --color-light: rgb(255, 255, 255);
+  --color-shade: rgba(60, 60, 60, 0.8);
+  --color-dark: rgb(0, 0, 0);
+/************************************
+
+              Site Dimensions
+
+*************************************/
+  --site-max-width: 1400px;
+  --header-height: clamp(5.0rem, 10vw + 1.0rem, 10.0rem);
+  --space-xs: 0.5rem;
+  --space-s: 1.0rem;
+  --space-m: 2.0rem;
+  --space-l: 3.0rem;
+  --full-width: 100%;
+/************************************
+
+              Font Colors
+
+*************************************/
+  --color-font-dark: rgb(0, 0, 0);
+  --color-font-light: rgb(255, 255, 255);
+  --color-font-primary: rgb(2, 195, 217);
+  --color-font-secondary: rgb(151, 200, 235);
+  --color-font-alt: rgb(100, 233, 238);
+/************************************
+
+              Font Dimensions
+
+*************************************/
+  --font-size-xl: 2.5rem;
+  --font-size-l: 2.0rem;
+  --font-size-m: 1.5rem;
+  --font-size-s: 1.0rem;
+/************************************
+
+              Font Styles
+
+*************************************/
+  --font-family: "Lato", sans-serif;
+  --font-regular: 400;
+  --font-bold: 900;
+}

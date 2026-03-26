@@ -1,0 +1,82 @@
+/*
+* Copyright: (c)2026 Digging for Shovels
+*
+* Author: Richard Pinegar | Rich Pin Software
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Theme Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+header {
+  background-color: var(--color-dark);
+
+  .nav-button__item path {
+    fill: var(--color-light);
+  }
+}
+
+.our-links {
+  .page-link {
+    background-color: pink;
+  }
+
+  .page-link__item.instagram {
+    fill: rgb(208, 55, 208);
+  }
+
+  .page-link__item.youtube {
+    fill: rgb(255, 0, 0);
+  }
+
+  .page-link__item.venmo {
+    fill: rgb(18, 152, 241);
+  }
+
+  .page-link__item.bandcamp {
+    fill:rgb(151, 199, 232);
+  }
+
+  .page-link__item.soundcloud {
+    fill: rgb(255, 140, 0);
+  }
+}
+
+.music {
+  .page-video {
+    background-color: var(--color-dark);
+  }
+
+  .mute-toggle {
+    color: var(--color-light);
+  }
+
+  .page-video__item.caption {
+    color: var(--color-light);
+    text-align: center;
+    background: linear-gradient(transparent, var(--color-shade));
+  }
+}
+
+.the-band {
+  .band-member {
+    background-color: aqua;
+  }
+}
+
+footer {
+  background-color: var(--color-dark);
+  text-align: center;
+
+  .nav-links {
+    color: var(--color-light);
+  }
+
+  .social-link {
+    width: fit-content;
+  }
+
+  .social-link__item {
+    fill: var(--color-light);
+  }
+}
