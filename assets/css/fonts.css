@@ -46,17 +46,14 @@ h1 {
 }
 
 h3 { 
-  font-size: clamp(var(--font-size-m), 1vw + 0.5rem, var(--font-size-l));
+  font-size: clamp(var(--font-size-s), 1vw + 1.0rem, var(--font-size-l));
+  font-weight: var(--font-regular);
 }
 
-p, a { 
+button, span, p, a { 
   font-size: clamp(var(--font-size-s), 1vw + 0.25rem, var(--font-size-m)); 
 }
 
-a {
+.nav-links {
   font-weight: var(--font-bold);
-}
-
-.mute-toggle {
-  font-size: var(--font-size-m);
 }

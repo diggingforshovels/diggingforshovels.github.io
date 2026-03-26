@@ -34,12 +34,16 @@ img, picture, video, svg {
   max-width: 100%;
 }
 
-img, picture, video {
+img, picture, video, a {
   display: block;
 }
 
 svg {
   display: inline;
+}
+
+address {
+  font-style: normal;
 }
 
 button {

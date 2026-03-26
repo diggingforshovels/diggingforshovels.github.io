@@ -13,6 +13,7 @@
             Site Layout
 
 *************************************/
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,14 +113,16 @@ section.wrapper {
   gap: var(--space-s);
 
   .page-link {
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: var(--space-s);
-    padding: 0 var(--space-m);
+    padding: 0 var(--space-s);
   }
 
-  .page-link__item {
+  .page-link__item.icon {
+    place-self: end center;
     height: clamp(3.0rem, 1vw + 3.0rem, 5.0rem);
+  }
+
+  .page-link__item.text {
+    place-self: start center;
   }
 }
 
@@ -150,6 +153,7 @@ section.wrapper {
     padding: var(--space-xs);
     margin: var(--space-xs) var(--space-xs) 0 0;
     z-index: 1;
+    /* width: clamp(5.0rem, 2vw + 1.0rem, 8.0rem); */
   }
 
   .page-video__item.caption {
@@ -176,7 +180,11 @@ section.wrapper {
   }
 }
 
-.wrapper.contact-us {
+.page-content.contact-us.wrapper {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+
+  .contact.wrapper {
+    padding: var(--space-s);
+  }
 }
