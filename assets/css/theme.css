@@ -66,6 +66,7 @@ footer {
 
   .mute-toggle {
     color: var(--color-light);
+    background-color: var(--color-shade);
   }
 
   .page-video__item.caption {

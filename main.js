@@ -7,80 +7,80 @@
 
 const rootElement = document.documentElement;
 const cssStyles = window.getComputedStyle(rootElement);
-const bgPrimary = cssStyles.getPropertyValue("--bg-primary");
-const bgSecondary = cssStyles.getPropertyValue("--bg-secondary");
-const bgSecondaryAlt = cssStyles.getPropertyValue("--bg-secondary-alt");
-const bgLow = cssStyles.getPropertyValue("--bg-low");
-const bgLight = cssStyles.getPropertyValue("--bg-light");
-const navLinks = document.querySelectorAll('#nav-links a');
+const clrPrimary = cssStyles.getPropertyValue("--color-primary");
+const clrShade = cssStyles.getPropertyValue("--color-shade");
+const clrSecondary = cssStyles.getPropertyValue("--color-secondary");
+const clrAlt = cssStyles.getPropertyValue("--color-alt");
+const clrLight = cssStyles.getPropertyValue("--color-light");
+// const navLinks = document.querySelectorAll('#nav-links a');
 const video = document.querySelectorAll('.page-video');
 const videoPlayer = document.querySelectorAll('.player');
 
-var nl = document.getElementById("nav-links");
-var hl = document.getElementById("hamburger-link");
+// var nl = document.getElementById("nav-links");
+// var hl = document.getElementById("hamburger-link");
 
 // Hamburger Navigation Menu toggle
-function toggleMenu() {
-  nl.classList.toggle("open")
+// function toggleMenu() {
+//   nl.classList.toggle("open")
   
-  if(nl.classList.value === 'open') {
-    var page = window.location.hash;
+//   if(nl.classList.value === 'open') {
+//     var page = window.location.hash;
     // set Hamburger Navigation Menu color to page color
-    switch(page) {
-      case '#our-links':
-        hl.style.color = bgPrimary;
-        break;
-      case '#music':
-        hl.style.color = bgSecondary;
-        break;
-      case '#the-band':
-        hl.style.color = bgSecondaryAlt;
-        break;
-      case '#contact-us':
-        hl.style.color = bgLow;
-        break;
-      default:
-        hl.style.color = bgPrimary;
-    }
-  } else {
-    hl.style.color = bgLight;
-  }
-}
+//     switch(page) {
+//       case '#our-links':
+//         hl.style.color = bgPrimary;
+//         break;
+//       case '#music':
+//         hl.style.color = bgSecondary;
+//         break;
+//       case '#the-band':
+//         hl.style.color = bgSecondaryAlt;
+//         break;
+//       case '#contact-us':
+//         hl.style.color = bgLow;
+//         break;
+//       default:
+//         hl.style.color = bgPrimary;
+//     }
+//   } else {
+//     hl.style.color = bgLight;
+//   }
+// }
 
 // Set link color to page color on mouseover and reset on mouseout
-navLinks.forEach(link => {
-  link.addEventListener('mouseover', () => {
-    var page = window.location.hash;
-    switch(page) {
-      case '#our-links':
-        link.style.color = bgPrimary;
-        console.log(page);
-        break;
-      case '#music':
-        link.style.color = bgSecondary;
-        break;
-      case '#the-band':
-        link.style.color = bgSecondaryAlt;
-        break;
-      case '#contact-us':
-        link.style.color = bgLow;
-        break;
-      default:
-        link.style.color = bgPrimary;
-    }
-  });
-  link.addEventListener('mouseout', () => {
-    link.style.color = bgLight;
-  });
-});
+// navLinks.forEach(link => {
+//   link.addEventListener('mouseover', () => {
+//     var page = window.location.hash;
+//     switch(page) {
+//       case '#our-links':
+//         link.style.color = bgPrimary;
+//         console.log(page);
+//         break;
+//       case '#music':
+//         link.style.color = bgSecondary;
+//         break;
+//       case '#the-band':
+//         link.style.color = bgSecondaryAlt;
+//         break;
+//       case '#contact-us':
+//         link.style.color = bgLow;
+//         break;
+//       default:
+//         link.style.color = bgPrimary;
+//     }
+//   });
+//   link.addEventListener('mouseout', () => {
+//     link.style.color = bgLight;
+//   });
+// });
 
 // Close Hamburger Navigation Menu after link is selected
-document.querySelectorAll('#nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    nl.classList.remove("open");
-    hl.style.color = bgLight;
-  });
-});
+// document.querySelectorAll('#nav-links a').forEach(link => {
+//   link.addEventListener('click', () => {
+//     nl.classList.remove("open");
+//     hl.style.color = bgLight;
+//   });
+// });
 
 // Video mute by default on site load
 video.forEach((container) => {
@@ -96,13 +96,16 @@ video.forEach((container) => {
       // Set all button values to "Unmute"
       document.querySelectorAll('.mute-toggle').forEach((b) => {
         b.textContent = "Unmute";
+        b.style.backgroundColor = clrShade;
       });
       // Toggle "Unmute" and update button value
       video.muted = false;
       btn.textContent = "Mute";
+      btn.style.backgroundColor = clrPrimary;
     } else {
       video.muted = true;
       btn.textContent = "Unmute";
+      btn.style.backgroundColor = clrShade;
     }
   });
 });
