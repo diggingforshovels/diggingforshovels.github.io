@@ -4,46 +4,46 @@
 * Author: Richard Pinegar | Rich Pin Software
 * Date: March 2026
 * Site Info: Digging for Shovels Official Band Website
-* Content: Main Stylesheet for Digging for Shovels
+* Content: CSS Reset & Defaults for Digging for Shovels
 * Version: 3.0
 */
 
-/************************************
-
-      CSS Reset & Default Styles
-
-*************************************/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html { 
+  scroll-behavior: smooth; 
 }
 
-body {
-  line-height: 1.5;
+body { 
+  line-height: 1.5; 
 }
 
-html, body, main, section, button {
-  padding: 0;
+html, 
+body, 
+main, 
+section, 
+button { 
+  padding: 0; 
 }
 
-img, picture, video, svg {
-  max-width: 100%;
+img, 
+picture, 
+video, 
+svg { 
+  max-width: 100%; 
 }
 
-img, picture, video, a {
-  display: block;
+img, 
+picture, 
+video { 
+  display: block; 
 }
 
-svg {
-  display: inline;
-}
-
-address {
-  font-style: normal;
+svg { 
+  display: inline; 
 }
 
 button {

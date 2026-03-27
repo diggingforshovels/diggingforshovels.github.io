@@ -4,15 +4,9 @@
 * Author: Richard Pinegar | Rich Pin Software
 * Date: March 2026
 * Site Info: Digging for Shovels Official Band Website
-* Content: Fonts and Font Styles for Digging for Shovels
+* Content: Font Definitions & Styles for Digging for Shovels
 * Version: 3.0
 */
-
-/************************************
-
-      Font Definitions & Styles
-
-*************************************/
 
 /* lato-regular - latin */
 @font-face {
@@ -32,7 +26,7 @@
 }
 
 html { 
-  font-size: 16px;
+  font-size: 16px; 
 }
 
 body { 
@@ -50,10 +44,15 @@ h3 {
   font-weight: var(--font-regular);
 }
 
-button, span, p, a { 
+address { 
+  font-style: normal; 
+}
+
+a,
+p,
+span,
+button { 
   font-size: clamp(var(--font-size-s), 1vw + 0.25rem, var(--font-size-m)); 
 }
 
-.nav-links {
-  font-weight: var(--font-bold);
-}
+.nav-links { font-weight: var(--font-bold); }
