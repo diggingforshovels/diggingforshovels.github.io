@@ -5,6 +5,16 @@
  * * @version 1.1.0
  */
 
+// Navigation
+const main = document.querySelectorAll('main');
+const navButton = document.querySelector('.nav-button');
+const ul = document.getElementById('navigation_dropdown');
+const li = document.querySelectorAll('#navigation_dropdown li');
+const a = document.querySelectorAll('#navigation_dropdown a');
+// Video
+const video = document.querySelectorAll('.page-video');
+const videoPlayer = document.querySelectorAll('.player');
+// CSS
 const rootElement = document.documentElement;
 const cssStyles = window.getComputedStyle(rootElement);
 const clrPrimary = cssStyles.getPropertyValue("--color-primary");
@@ -14,75 +24,57 @@ const clrSecondary = cssStyles.getPropertyValue("--color-secondary");
 const clrAlt = cssStyles.getPropertyValue("--color-alt");
 const clrDark = cssStyles.getPropertyValue("--color-dark");
 const clrLight = cssStyles.getPropertyValue("--color-light");
-// const navLinks = document.querySelectorAll('#nav-links a');
-const video = document.querySelectorAll('.page-video');
-const videoPlayer = document.querySelectorAll('.player');
+/**
+ * 
+ * Toggle Menu
+ * 
+ */
 
-// var nl = document.getElementById("nav-links");
-// var hl = document.getElementById("hamburger-link");
+// Set hamburger button default color
+navButton.style.fill = clrLight;
 
-// Hamburger Navigation Menu toggle
-// function toggleMenu() {
-//   nl.classList.toggle("open")
+function toggleMenu() {
+  var isActive = ul.classList.contains('active');
   
-//   if(nl.classList.value === 'open') {
-//     var page = window.location.hash;
-    // set Hamburger Navigation Menu color to page color
-//     switch(page) {
-//       case '#our-links':
-//         hl.style.color = bgPrimary;
-//         break;
-//       case '#music':
-//         hl.style.color = bgSecondary;
-//         break;
-//       case '#the-band':
-//         hl.style.color = bgSecondaryAlt;
-//         break;
-//       case '#contact-us':
-//         hl.style.color = bgLow;
-//         break;
-//       default:
-//         hl.style.color = bgPrimary;
-//     }
-//   } else {
-//     hl.style.color = bgLight;
-//   }
-// }
+  if(!isActive) {
+    // Toggle ON
+    ul.classList.toggle('active');
+    navButton.style.fill = clrPrimary;
+    // Update the ARIA attribute for accessibility
+    navButton.setAttribute('aria-expanded', true);
+  } else if(isActive) {
+    // Toggle OFF
+    ul.classList.remove('active');
+    navButton.style.fill = clrLight;
+    // Update the ARIA attribute for accessibility
+    navButton.setAttribute('aria-expanded', false);
+  }
+}
 
-// Set link color to page color on mouseover and reset on mouseout
-// navLinks.forEach(link => {
-//   link.addEventListener('mouseover', () => {
-//     var page = window.location.hash;
-//     switch(page) {
-//       case '#our-links':
-//         link.style.color = bgPrimary;
-//         console.log(page);
-//         break;
-//       case '#music':
-//         link.style.color = bgSecondary;
-//         break;
-//       case '#the-band':
-//         link.style.color = bgSecondaryAlt;
-//         break;
-//       case '#contact-us':
-//         link.style.color = bgLow;
-//         break;
-//       default:
-//         link.style.color = bgPrimary;
-//     }
-//   });
-//   link.addEventListener('mouseout', () => {
-//     link.style.color = bgLight;
-//   });
-// });
+// Close menu after a link is selected
+a.forEach(link => { 
+  link.addEventListener('click', () => {
+    ul.classList.remove('active');
+    navButton.style.fill = clrLight;
+  });
+});
 
-// Close Hamburger Navigation Menu after link is selected
-// document.querySelectorAll('#nav-links a').forEach(link => {
-//   link.addEventListener('click', () => {
-//     nl.classList.remove("open");
-//     hl.style.color = bgLight;
-//   });
-// });
+// Close menu after clicking anywhere on the page
+main.forEach(element => {
+  element.addEventListener('click', () => {
+    var isActive = ul.classList.contains('active');
+
+    if(isActive) {
+      ul.classList.remove('active');
+      navButton.style.fill = clrLight;
+    }
+  });
+});
+/**
+ * 
+ * Play Video Automatically & Mute/Unmute Button
+ * 
+ */
 
 // Video mute by default on site load
 video.forEach((container) => {
