@@ -15,17 +15,34 @@ header {
     color: var(--color-font-light);
     background-color: var(--color-dark);
   }
-  & .nav-links li {
-    padding: var(--space-s);
-    border-bottom: 1px solid var(--color-shade);
-  }
-  & .nav-links a {
-    display: flex;
-    justify-content: center;
-  }
   & .nav-links li:hover,
   & .nav-links li:focus {
     color: var(--color-font-secondary);
-    background-color: var(--color-shade);
+    background-color: rgb(15, 15, 15);
+  }
+}
+
+footer {
+  & .nav-links li:hover,
+  & .nav-links li:focus { color: var(--color-font-primary); }
+  & .icon.instagram:hover,
+  & .icon.instagram:focus { fill: rgb(208, 55, 208); }
+  & .icon.youtube:hover,
+  & .icon.youtube:focus { fill: rgb(255, 0, 0); }
+  & .icon.venmo:hover,
+  & .icon.venmo:focus { fill: rgb(18, 152, 241); }
+  & .icon.bandcamp:hover,
+  & .icon.bandcamp:focus { fill:rgb(151, 199, 232); }
+  & .icon.soundcloud:hover,
+  & .icon.soundcloud:focus { fill: rgb(255, 140, 0); }
+}
+
+.links {
+  & .card:hover,
+  & .card:focus {
+    color: var(--color-font-light);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--color-light);
+    outline-color: var(--color-light);
   }
 }

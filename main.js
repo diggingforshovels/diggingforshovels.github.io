@@ -5,16 +5,16 @@
  * * @version 1.1.0
  */
 
-// Navigation
+// Navigation Elements
 const main = document.querySelectorAll('main');
 const navButton = document.querySelector('.nav-button');
 const ul = document.getElementById('navigation_dropdown');
 const li = document.querySelectorAll('#navigation_dropdown li');
 const a = document.querySelectorAll('#navigation_dropdown a');
-// Video
+// Video Elements
 const video = document.querySelectorAll('.page-video');
 const videoPlayer = document.querySelectorAll('.player');
-// CSS
+// CSS Styles
 const rootElement = document.documentElement;
 const cssStyles = window.getComputedStyle(rootElement);
 const clrPrimary = cssStyles.getPropertyValue("--color-primary");
