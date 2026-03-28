@@ -1,8 +1,9 @@
 /**
  * Main Site Logic
- * Handles video synchronization and link interactions.
- * * @author [Richard Pinegar | Rich Pin Software]
- * * @version 1.1.0
+ * @copyright 2026 Richard Pinegar | Rich Pin Software
+ * @author Richard Pinegar | Rich Pin Software
+ * @description Main site logic for handling video synchronization and link interactions.
+ * @version 3.0
  */
 
 // Navigation Elements
@@ -24,28 +25,25 @@ const clrSecondary = cssStyles.getPropertyValue("--color-secondary");
 const clrAlt = cssStyles.getPropertyValue("--color-alt");
 const clrDark = cssStyles.getPropertyValue("--color-dark");
 const clrLight = cssStyles.getPropertyValue("--color-light");
+
 /**
  * 
  * Toggle Menu
  * 
  */
-
-// Set hamburger button default color
-navButton.style.fill = clrLight;
-
 function toggleMenu() {
-  var isActive = ul.classList.contains('active');
-  
+  var isActive = navButton.classList.contains('active');
+
   if(!isActive) {
     // Toggle ON
+    navButton.classList.toggle('active');
     ul.classList.toggle('active');
-    navButton.style.fill = clrPrimary;
     // Update the ARIA attribute for accessibility
     navButton.setAttribute('aria-expanded', true);
   } else if(isActive) {
     // Toggle OFF
+    navButton.classList.remove('active');
     ul.classList.remove('active');
-    navButton.style.fill = clrLight;
     // Update the ARIA attribute for accessibility
     navButton.setAttribute('aria-expanded', false);
   }
@@ -54,8 +52,10 @@ function toggleMenu() {
 // Close menu after a link is selected
 a.forEach(link => { 
   link.addEventListener('click', () => {
+    navButton.classList.remove('active');
     ul.classList.remove('active');
-    navButton.style.fill = clrLight;
+    // Update the ARIA attribute for accessibility
+    navButton.setAttribute('aria-expanded', false);
   });
 });
 
@@ -65,11 +65,14 @@ main.forEach(element => {
     var isActive = ul.classList.contains('active');
 
     if(isActive) {
+      navButton.classList.remove('active');
       ul.classList.remove('active');
-      navButton.style.fill = clrLight;
+      // Update the ARIA attribute for accessibility
+      navButton.setAttribute('aria-expanded', false);
     }
   });
 });
+
 /**
  * 
  * Play Video Automatically & Mute/Unmute Button

@@ -4,7 +4,7 @@
 * Author: Richard Pinegar | Rich Pin Software
 * Date: March 2026
 * Site Info: Digging for Shovels Official Band Website
-* Content: Theme for Digging for Shovels
+* Content: Theme Styles for Digging for Shovels
 * Version: 3.0
 */
 
@@ -27,6 +27,11 @@ header {
 
   & .nav-icon { 
     fill: var(--color-light); 
+  }
+  & .nav-links {
+    & li {
+      border-bottom: 1px solid var(--color-shade);
+    }
   }
 }
 
