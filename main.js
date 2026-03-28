@@ -12,9 +12,6 @@ const navButton = document.querySelector('.nav-button');
 const ul = document.getElementById('navigation_dropdown');
 const li = document.querySelectorAll('#navigation_dropdown li');
 const a = document.querySelectorAll('#navigation_dropdown a');
-// Video Elements
-const video = document.querySelectorAll('.page-video');
-const videoPlayer = document.querySelectorAll('.player');
 // CSS Styles
 const rootElement = document.documentElement;
 const cssStyles = window.getComputedStyle(rootElement);
@@ -24,7 +21,13 @@ const clrShadeLight = cssStyles.getPropertyValue("--color-shade-light");
 const clrSecondary = cssStyles.getPropertyValue("--color-secondary");
 const clrAlt = cssStyles.getPropertyValue("--color-alt");
 const clrDark = cssStyles.getPropertyValue("--color-dark");
+const clrFontDark = cssStyles.getPropertyValue("--color-font-dark");
 const clrLight = cssStyles.getPropertyValue("--color-light");
+const clrFontLight = cssStyles.getPropertyValue("--color-font-light");
+// Video Elements
+const allbuttons = document.querySelectorAll('.mute-toggle');
+const allVideos = document.querySelectorAll('.video');
+const allPlayers = document.querySelectorAll('.player');
 
 /**
  * 
@@ -80,29 +83,31 @@ main.forEach(element => {
  */
 
 // Video mute by default on site load
-video.forEach((container) => {
-  const btn = container.querySelector('.mute-toggle');
-  const video = container.querySelector('.player');
+allVideos.forEach((container) => {
+  const button = container.querySelector('.mute-toggle');
+  const player = container.querySelector('.player');
 
-  btn.addEventListener('click', () => {
-    if (video.muted) {
+  button.addEventListener('click', () => {
+    if (player.muted) {
       // Mute all videos by default
-      videoPlayer.forEach((v) => {
-        v.muted = true;
+      allPlayers.forEach((p) => {
+        p.muted = true;
       });
       // Set all button values to "Unmute"
-      document.querySelectorAll('.mute-toggle').forEach((b) => {
+      allbuttons.forEach((b) => {
         b.textContent = "Unmute";
-        b.style.backgroundColor = clrShade;
+        // b.style.backgroundColor = clrShade;
       });
       // Toggle "Unmute" and update button value
-      video.muted = false;
-      btn.textContent = "Mute";
-      btn.style.backgroundColor = clrPrimary;
+      player.muted = false;
+      button.textContent = "Mute";
+      // button.style.backgroundColor = clrAlt;
+      // button.style.color = clrFontDark;
     } else {
-      video.muted = true;
-      btn.textContent = "Unmute";
-      btn.style.backgroundColor = clrShade;
+      player.muted = true;
+      button.textContent = "Unmute";
+      // button.style.backgroundColor = clrShade;
+      // button.style.color = clrFontLight;
     }
   });
 });
