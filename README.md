@@ -1,4 +1,4 @@
-# diggingforshovels.com <sub>Version 3.0</sub>
+# diggingforshovels.com | _Version 3.0_
 
 ## File Structure
 
