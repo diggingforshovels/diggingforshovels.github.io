@@ -1,4 +1,4 @@
-# diggingforshovels.com
+# diggingforshovels.com <sub>Version 3.0</sub>
 
 ## File Structure
 
