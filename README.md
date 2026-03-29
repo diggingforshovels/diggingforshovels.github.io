@@ -2,25 +2,25 @@
 
 ## File Structure
 
-/diggingforshovels.github.io<br>
-|--/assets<br>
-|  |--/css<br>
+__/diggingforshovels.github.io__<br>
+|--__/assets__<br>
+|  |--__/css__<br>
 |  |   |--fonts.css<br>
 |  |   |--layout.css<br>
 |  |   |--state.css<br>
 |  |   |--theme.css<br>
 |  |   |--variables.css<br>
-|  |--/fonts<br>
+|  |--__/fonts__<br>
 |  |   |--lato-v25-latin-900.woff2<br>
 |  |   |--lato-v25-latin-regular.woff2<br>
-|  |--/images<br>
+|  |--__/images__<br>
 |  |   |--diggingforshovels-logo.webp<br>
 |  |   |--jamison-nicosia-profile.webp<br>
 |  |   |--joe-brancaleone-profile.webp<br>
 |  |   |--rich-pin-profile.webp<br>
-|  |--/js<br>
+|  |--__/js__<br>
 |  |   |--main.js<br>
-|  |--/video<br>
+|  |--__/video__<br>
 |     |--digging-for-shovels-come-into-the-wave-original-song-video.webm<br>
 |     |--digging-for-shovels-guarantees-cover-song-video.webm<br>
 |--CNAME<br>
