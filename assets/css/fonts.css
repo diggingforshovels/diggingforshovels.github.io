@@ -36,11 +36,11 @@ body {
 }
 
 h1 {
-  font-size: min(8vw, var(--font-size-xl));
+  font-size: clamp(var(--font-size-m), 2.75vw + 1.0rem, var(--font-size-xl));
 }
 
 h3 {
-  font-size: min(6.5vw, var(--font-size-l));
+  font-size: clamp(var(--font-size-m), 2vw + 1.0rem, var(--font-size-l));
   font-weight: var(--font-regular);
 }
 
@@ -48,7 +48,7 @@ a,
 p,
 span,
 button {
-  font-size: min(5vw, var(--font-size-m));
+  font-size: clamp(var(--font-size-s), 1.5vw + 1.0rem, var(--font-size-m));
 }
 
 address { 
