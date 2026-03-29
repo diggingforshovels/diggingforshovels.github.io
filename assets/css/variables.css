@@ -27,7 +27,8 @@
 
 *************************************/
   --site-max-width: 1400px;
-  --header-height: clamp(5.0rem, 10vw + 1.0rem, 10.0rem);
+  --header-height: min(18vw, 10.0rem);
+  /* --header-height: clamp(5.0rem, 10vw + 1.0rem, 10.0rem); */
   --space-xs: 0.5rem;
   --space-s: 1.0rem;
   --space-m: 2.0rem;

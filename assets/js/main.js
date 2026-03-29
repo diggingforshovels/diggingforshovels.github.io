@@ -10,24 +10,12 @@
 const main = document.querySelectorAll('main');
 const navButton = document.querySelector('.nav-button');
 const ul = document.getElementById('navigation_dropdown');
-const li = document.querySelectorAll('#navigation_dropdown li');
 const a = document.querySelectorAll('#navigation_dropdown a');
-// CSS Styles
-const rootElement = document.documentElement;
-const cssStyles = window.getComputedStyle(rootElement);
-const clrPrimary = cssStyles.getPropertyValue("--color-primary");
-const clrShade = cssStyles.getPropertyValue("--color-shade");
-const clrShadeLight = cssStyles.getPropertyValue("--color-shade-light");
-const clrSecondary = cssStyles.getPropertyValue("--color-secondary");
-const clrAlt = cssStyles.getPropertyValue("--color-alt");
-const clrDark = cssStyles.getPropertyValue("--color-dark");
-const clrFontDark = cssStyles.getPropertyValue("--color-font-dark");
-const clrLight = cssStyles.getPropertyValue("--color-light");
-const clrFontLight = cssStyles.getPropertyValue("--color-font-light");
 // Video Elements
-const allbuttons = document.querySelectorAll('.mute-toggle');
+const allButtons = document.querySelectorAll('.mute-toggle');
 const allVideos = document.querySelectorAll('.video');
 const allPlayers = document.querySelectorAll('.player');
+const buttonValue = document.querySelector('.mute-toggle').textContent;
 
 /**
  * 
@@ -78,36 +66,33 @@ main.forEach(element => {
 
 /**
  * 
- * Play Video Automatically & Mute/Unmute Button
+ * Toggle Mute Button
  * 
  */
 
-// Video mute by default on site load
-allVideos.forEach((container) => {
-  const button = container.querySelector('.mute-toggle');
-  const player = container.querySelector('.player');
+allVideos.forEach((video) => {
+  const button = video.querySelector('.mute-toggle');
+  const player = video.querySelector('.player');
 
   button.addEventListener('click', () => {
     if (player.muted) {
-      // Mute all videos by default
+      // Reset all to default muted
       allPlayers.forEach((p) => {
         p.muted = true;
       });
-      // Set all button values to "Unmute"
-      allbuttons.forEach((b) => {
-        b.textContent = "Unmute";
-        // b.style.backgroundColor = clrShade;
+      // Reset all to default button value
+      allButtons.forEach((b) => {
+        b.classList.remove('active');
+        b.textContent = buttonValue;
       });
-      // Toggle "Unmute" and update button value
+      // Unmute player and set button value
       player.muted = false;
+      button.classList.toggle('active');
       button.textContent = "Mute";
-      // button.style.backgroundColor = clrAlt;
-      // button.style.color = clrFontDark;
-    } else {
+    } else { // Mute player and reset button value
       player.muted = true;
-      button.textContent = "Unmute";
-      // button.style.backgroundColor = clrShade;
-      // button.style.color = clrFontLight;
+      button.classList.remove('active');
+      button.textContent = buttonValue;
     }
   });
 });

@@ -139,7 +139,7 @@ section {
 .card.inline {
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: var(--space-l);
+  gap: min(5vw, var(--space-l));
 }
 
 .links, 
@@ -170,7 +170,7 @@ section {
   & .caption { 
     grid-area: 1 / 1; 
   }
-  & .player { 
+  & .player {
     object-fit: cover; 
   }
   & .mute-toggle {

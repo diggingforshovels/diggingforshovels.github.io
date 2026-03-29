@@ -68,6 +68,17 @@ footer {
   }
 }
 
+.videos {
+  & .mute-toggle.active {
+    background-color: var(--color-dark);
+  }
+  & .mute-toggle:hover,
+  & .mute-toggle:focus-visible {
+    border: 2px solid var(--color-light);
+    outline-color: var(--color-light);
+  }
+}
+
 .contacts {
   & .card:hover,
   & .card:focus-visible {
