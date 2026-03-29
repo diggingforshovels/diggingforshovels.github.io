@@ -65,7 +65,7 @@ __/diggingforshovels.github.io__<br>
 
 ### fonts.css
 
-- Contains @font-face to import fonts from `/assets/fonts`.<br>
+- Contains `@font-face` to import fonts from `/assets/fonts`.<br>
 - Contains global font sizes and styles.<br>
 - Contains individual font sizes and styles.<br>
 
