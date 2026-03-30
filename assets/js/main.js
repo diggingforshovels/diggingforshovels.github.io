@@ -1,7 +1,8 @@
 /**
- * Main Site Logic
- * @copyright 2026 Richard Pinegar | Rich Pin Software
+ * @copyright 2026 Digging for Shovels. All rights reserved.
  * @author Richard Pinegar | Rich Pin Software
+ * @link https://richpinsoftware.com
+ * @date March 2026
  * @description Main site logic for handling video synchronization and link interactions.
  * @version 3.0
  */
@@ -19,7 +20,7 @@ const buttonValue = document.querySelector('.mute-toggle').textContent;
 
 /**
  * 
- * Toggle Menu
+ * Toggle Navigation Menu
  * 
  */
 function toggleMenu() {
@@ -66,10 +67,9 @@ main.forEach(element => {
 
 /**
  * 
- * Toggle Mute Button
+ * Toggle Video Mute Button
  * 
  */
-
 allVideos.forEach((video) => {
   const button = video.querySelector('.mute-toggle');
   const player = video.querySelector('.player');

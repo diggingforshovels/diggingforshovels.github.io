@@ -1,7 +1,8 @@
 /*
-* Copyright: (c)2026 Digging for Shovels
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
 *
 * Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
 * Date: March 2026
 * Site Info: Digging for Shovels Official Band Website
 * Content: Global Variables for Digging for Shovels
@@ -28,7 +29,6 @@
 *************************************/
   --site-max-width: 1400px;
   --header-height: min(18vw, 10.0rem);
-  /* --header-height: clamp(5.0rem, 10vw + 1.0rem, 10.0rem); */
   --space-xs: 0.5rem;
   --space-s: 1.0rem;
   --space-m: 2.0rem;
