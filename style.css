@@ -1,0 +1,63 @@
+/*
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: CSS Reset & Defaults for Digging for Shovels
+* Version: 3.0
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+html, 
+body, 
+main, 
+section, 
+button { 
+  padding: 0; 
+}
+
+img, 
+picture, 
+video, 
+svg { 
+  max-width: 100%; 
+}
+
+img, 
+picture, 
+video { 
+  display: block; 
+}
+
+svg { 
+  display: inline; 
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,74 @@
+/*
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Font Definitions & Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/lato-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/lato-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html { 
+  font-size: 16px; 
+}
+
+body { 
+  font-family: var(--font-family);
+  font-weight: var(--font-regular);
+  font-style: normal;
+}
+
+h1 {
+  font-size: clamp(var(--font-size-m), 2.75vw + 1.0rem, var(--font-size-xl));
+}
+
+h3 {
+  font-size: clamp(var(--font-size-m), 2vw + 1.0rem, var(--font-size-l));
+  font-weight: var(--font-regular);
+}
+
+a,
+p,
+span,
+button {
+  font-size: clamp(var(--font-size-s), 1.5vw + 1.0rem, var(--font-size-m));
+}
+
+address { 
+  font-style: normal; 
+}
+
+header,
+footer {
+  & .nav-links { 
+    font-weight: var(--font-bold); 
+  }
+}
+
+.contact {
+  & .location-attribution {
+    font-size: var(--font-size-xs);
+  }
+}
+
+.copyright {
+  font-size: var(--font-size-xs);
+}

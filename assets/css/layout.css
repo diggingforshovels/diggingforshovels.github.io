@@ -1,0 +1,222 @@
+/*
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Layout Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+header, 
+footer, 
+main { 
+  width: var(--full-width); 
+}
+
+.header-wrapper,
+.footer-wrapper,
+.section-wrapper { 
+  width: min(var(--full-width), var(--site-max-width)); 
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: grid;
+  justify-items: center;
+  height: var(--header-height);
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(auto-fit, minmax(var(--header-height), auto));
+  align-items: center;
+  column-gap: var(--space-l);
+  padding: 0 var(--space-s);
+
+  & nav {
+    display: contents;
+  }
+  & .header-logo.image, 
+  & .nav-icon { 
+    height: calc(var(--header-height) / 2); 
+  }
+  & .header-logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  & .header-logo.link {
+    width: fit-content;
+  }
+  & .nav-button {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  & .nav-links { 
+    display: none; 
+    grid-column: 1 / -1;
+    grid-row: 2;
+    & li {
+      padding: var(--space-s);
+    }
+    & a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-l);
+  padding: var(--space-l) var(--space-s);
+
+  & .nav-links {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-s);
+  }
+  & .icon {
+    height: clamp(2.0rem, 1vw + 2.0rem, 5.0rem);
+    place-self: end center;
+  }
+  & .icon-links { 
+    margin-inline: auto; 
+  }
+  & .icon-link { 
+    margin-right: var(--space-s); 
+  }
+  & .icon-link:last-child {
+    margin-right: 0;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  justify-items: center;
+}
+
+section {
+  scroll-margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.section-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-s);
+  padding: var(--space-m) var(--space-s);
+
+  @media (max-width: 380px) {
+    padding: var(--space-xs);
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: var(--space-xs);
+}
+
+.card {
+  display: grid;
+  padding: var(--space-xs);
+}
+
+.card.inline {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: min(5vw, var(--space-l));
+}
+
+.links, 
+.contact {
+  & .icon {
+    height: clamp(3.0rem, 1vw + 3.0rem, 5.0rem);
+    place-self: end center;
+  }
+  & .caption { 
+    place-self: start center; 
+  }
+}
+
+.links {
+  @media (max-width: 380px) {
+    .card.link {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      gap: var(--space-s);
+    }
+    .icon {
+      margin: auto 0;
+    }
+    .caption {
+      margin: auto auto auto 0;
+    }
+  }
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-rows: max-content;
+  gap: var(--space-s);
+  min-width: 0;
+
+  & .video {
+    display: grid;
+    min-width: 0;
+  }
+  & .player,
+  & .mute-toggle,
+  & .caption { 
+    grid-area: 1 / 1; 
+  }
+  & .player {
+    object-fit: cover; 
+  }
+  & .mute-toggle {
+    place-self: start end;
+    padding: var(--space-xs);
+    margin: var(--space-xs) var(--space-xs) 0 0;
+    z-index: 1;
+  }
+  & .caption {
+    place-self: end center;
+    padding: var(--space-xs);
+    width: var(--full-width);
+  }
+}
+
+.profile {
+  & .image { width: clamp(6.25rem, 4vw + 6.25rem, 15.0rem); }
+  & .caption { place-self: center start; }
+}
+
+.contact {
+  .caption {
+    text-align: center;
+  }
+  .location-attribution {
+    display: block;
+  }
+}

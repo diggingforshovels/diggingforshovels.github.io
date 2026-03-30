@@ -1,0 +1,97 @@
+/*
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Theme Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(transparent, var(--color-shade));
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  background-color: var(--color-dark);
+  border-bottom: 1px solid var(--color-shade);
+
+  & .nav-icon { 
+    fill: var(--color-light); 
+  }
+  & .nav-links {
+    & li {
+      border-bottom: 1px solid var(--color-shade);
+    }
+  }
+}
+
+footer {
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-shade);
+
+  & .nav-links { 
+    color: var(--color-light); 
+  }
+  & .icon.instagram,
+  & .icon.youtube,
+  & .icon.venmo,
+  & .icon.bandcamp,
+  & .icon.soundcloud { 
+    fill: var(--color-light); 
+  }
+}
+
+.card, 
+.video { 
+  border: 1px solid var(--color-shade); 
+}
+
+.card { 
+  background-color: var(--color-light); 
+}
+
+.links {
+  & .icon.instagram { fill: rgb(208, 55, 208); }
+  & .icon.youtube { fill: rgb(255, 0, 0); }
+  & .icon.venmo { fill: rgb(18, 152, 241); }
+  & .icon.bandcamp { fill:rgb(151, 199, 232); }
+  & .icon.soundcloud { fill: rgb(255, 140, 0); }
+}
+
+.videos {
+  & .video { 
+    background-color: var(--color-dark); 
+  }
+  & .mute-toggle {
+    color: var(--color-light);
+    background-color: var(--color-shade);
+  }
+  & .caption {
+    color: var(--color-light);
+    text-align: center;
+    background: linear-gradient(transparent, var(--color-shade));
+  }
+}
+  
+.profile {
+  & .caption p { 
+    color: var(--color-shade); 
+  }
+}
+
+.copyright {
+  color: var(--color-light);
+  text-align: center;
+  margin-top: var(--space-s);
+}

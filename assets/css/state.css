@@ -1,0 +1,90 @@
+/*
+* Copyright: (c) 2026 Digging for Shovels. All rights reserved.
+*
+* Author: Richard Pinegar | Rich Pin Software
+* URL: https://richpinsoftware.com
+* Date: March 2026
+* Site Info: Digging for Shovels Official Band Website
+* Content: Element States & Styles for Digging for Shovels
+* Version: 3.0
+*/
+
+header {
+  & .nav-button.active {
+    & .nav-icon { 
+      fill: var(--color-alt); 
+    }
+  }
+  & .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-font-light);
+    background-color: var(--color-dark);
+    & li:hover,
+    & a:focus-visible {
+      color: var(--color-font-alt);
+      background-color: rgb(15, 15, 15);
+    }
+  }
+}
+
+footer {
+  & .nav-links {
+    & li:hover,
+    & a:focus-visible { color: var(--color-font-alt); }
+  }
+  & .icon.instagram:hover { fill: rgb(208, 55, 208); }
+  & .icon.youtube:hover { fill: rgb(255, 0, 0); }
+  & .icon.venmo:hover { fill: rgb(18, 152, 241); }
+  & .icon.bandcamp:hover { fill:rgb(151, 199, 232); }
+  & .icon.soundcloud:hover { fill: rgb(255, 140, 0); }
+  /* 
+    Target links for accessibility 
+  */
+  & .icon-link:first-child:focus-visible {
+    & .icon.instagram { fill: rgb(208, 55, 208); }
+  }
+  & .icon-link:nth-child(2):focus-visible {
+    & .icon.youtube { fill: rgb(255, 0, 0); }
+  }
+  & .icon-link:nth-child(3):focus-visible {
+    & .icon.venmo { fill: rgb(18, 152, 241); }
+  }
+  & .icon-link:nth-child(4):focus-visible {
+    & .icon.bandcamp { fill: rgb(151, 199, 232); }
+  }
+  & .icon-link:last-child:focus-visible {
+    & .icon.soundcloud { fill: rgb(255, 140, 0); }
+  }
+}
+
+.links,
+.contacts {
+  & .card:hover,
+  & .card:focus-visible {
+    color: var(--color-font-light);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--color-light);
+    outline-color: var(--color-light);
+  }
+}
+
+.videos {
+  & .mute-toggle.active {
+    background-color: var(--color-dark);
+  }
+  & .mute-toggle:hover,
+  & .mute-toggle:focus-visible {
+    border: 2px solid var(--color-light);
+    outline-color: var(--color-light);
+  }
+}
+
+.contacts {
+  & .card:hover,
+  & .card:focus-visible {
+    & .icon {
+      fill: var(--color-alt);
+    }
+  }
+}
