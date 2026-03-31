@@ -6,7 +6,7 @@
 * Date: March 2026
 * Site Info: Digging for Shovels Official Band Website
 * Content: CSS Reset & Defaults for Digging for Shovels
-* Version: 3.0
+* Version: 3.1
 */
 
 *, *::before, *::after {
@@ -15,7 +15,7 @@
 }
 
 html { 
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body { 
