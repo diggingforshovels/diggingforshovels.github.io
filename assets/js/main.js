@@ -4,7 +4,7 @@
  * @link https://richpinsoftware.com
  * @date March 2026
  * @description Main site logic for handling video synchronization and link interactions.
- * @version 3.0
+ * @version 3.1
  */
 
 // Navigation Elements
