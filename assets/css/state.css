@@ -15,6 +15,17 @@ header {
       fill: var(--color-alt); 
     }
   }
+  & .header-logo.link:focus-visible {
+    outline: none;
+    border: 2px solid var(--color-light);
+  }
+  & .nav-button:hover {
+    border: 2px solid var(--color-shade);
+  }
+  & .nav-button:focus-visible {
+    outline: none;
+    border: 2px solid var(--color-light);
+  }
   & .nav-links.active {
     display: flex;
     flex-direction: column;

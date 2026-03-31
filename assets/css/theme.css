@@ -9,7 +9,9 @@
 * Version: 3.0
 */
 
-body::before {
+html::before,
+body::before,
+main::before {
   content: "";
   position: fixed;
   top: 0;

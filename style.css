@@ -50,6 +50,7 @@ svg {
 button {
   cursor: pointer;
   background: none;
+  border: 2px solid transparent;
 }
 
 a {

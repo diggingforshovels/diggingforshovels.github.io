@@ -67,6 +67,7 @@ footer {
   & .nav-button {
     grid-column: 2;
     grid-row: 1;
+    display: grid;
   }
   & .nav-links { 
     display: none; 
